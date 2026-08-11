@@ -1,0 +1,26 @@
+{
+  "collected_as_of": "2026-08-10",
+  "duration_seconds": 10.0,
+  "method_doc": "docs/COLLECTION_METHOD.md",
+  "script": "scripts/collect_full_research_data.py",
+  "tracks": [
+    "A_rightmove",
+    "B_open_data",
+    "C_news"
+  ],
+  "row_counts": {
+    "ukhpi_area_monthly": 20543,
+    "rm_hpi_regional_monthly": 132,
+    "panel_sold_ukhpi_features": 20543,
+    "backtest_label_ledger": 133712,
+    "political_news_items": 346,
+    "boe_bank_rate_monthly": 363,
+    "ppd_city_monthly_2026": 96
+  },
+  "research_loop_readiness": {
+    "historical_price_data": true,
+    "political_news": true,
+    "backtest_labels": true,
+    "source_urls_present": true
+  }
+}

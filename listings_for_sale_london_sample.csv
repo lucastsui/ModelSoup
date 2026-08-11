@@ -1,0 +1,11 @@
+listing_id,channel,area,address,property_type,bedrooms,bathrooms,asking_price_gbp,price_qualifier,status_note,listed_or_reduced_date,agent,source,collected_as_of
+90117342,sale,London,"Parkholme Road, London, E8",house,5,,2850000,guide_price,,2026-07-13,,rightmove_listing_card,2026-08-09
+148711631,sale,London,"One Hyde Park, Knightsbridge, London, SW1X",apartment,5,,60000000,,,2024-07-05,,rightmove_listing_card,2026-08-09
+155320229,sale,London,"Avenue Road, St Johns Wood, London, NW8",house,10,,49950000,,,2025-06-27,,rightmove_listing_card,2026-08-09
+171185315,sale,London,"Balfour Place, Mayfair, London, W1K",end_of_terrace,7,,49500000,guide_price,,2026-01-19,,rightmove_listing_card,2026-08-09
+152236991,sale,London,"Whistler Square, London, SW1W",town_house,7,,47000000,guide_price,,2024-09-10,,rightmove_listing_card,2026-08-09
+152205953,sale,London,"Whistler Square, Chelsea Barracks, London, SW1W, United Kingdom",house,6,,47000000,,,2024-09-09,,rightmove_listing_card,2026-08-09
+158528285,sale,London,"One Hyde Park, Knightsbridge, London, SW1X",apartment,5,,46000000,,,2025-10-23,,rightmove_listing_card,2026-08-09
+173738432,sale,London,"Cornwall Gardens, London, SW7",house_of_multiple_occupation,14,,45000000,,,2026-03-26,,rightmove_listing_card,2026-08-09
+171587372,sale,London,"Upper Brook Street, London, W1K",terraced,6,,42500000,,,2026-02-03,,rightmove_listing_card,2026-08-09
+171790859,sale,London,"Upper Brook Street, London, W1K",town_house,6,,42500000,,,2026-02-03,,rightmove_listing_card,2026-08-09

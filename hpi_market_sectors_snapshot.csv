@@ -1,0 +1,5 @@
+date,area,segment,avg_asking_price_gbp,mom_change_pct,yoy_change_pct,note,source,collected_as_of
+2026-07-01,UK_ex_inner_London,first_time_buyer,226120,-0.6,-0.6,typically 2 beds or fewer,rightmove_hpi,2026-08-09
+2026-07-01,UK_ex_inner_London,second_stepper,346303,-0.9,0.0,,rightmove_hpi,2026-08-09
+2026-07-01,UK_ex_inner_London,top_of_ladder,686537,-0.5,-0.1,,rightmove_hpi,2026-08-09
+2026-07-01,UK,all,372359,-1.0,-0.4,national average newly listed,rightmove_hpi,2026-08-09

@@ -1,0 +1,13 @@
+__pycache__/
+.DS_Store
+.venv/
+*.pyc
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+research_loop/**/__pycache__/
+research_loop/runs/
+research_loop/viz/lineage_graph.json
+research_loop/viz/live_events.json
+*.mov

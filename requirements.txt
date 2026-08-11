@@ -1,0 +1,3 @@
+# PropView research loop — required for MLP training (no pure-Python NN backend)
+numpy>=2.0
+torch>=2.2

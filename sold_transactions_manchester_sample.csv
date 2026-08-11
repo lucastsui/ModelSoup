@@ -1,0 +1,16 @@
+address,postcode_area,property_type,bedrooms,tenure,sale_date,sold_price_gbp,metric,aggregation,source,collected_as_of
+6 Spreadbury Street Manchester M40 9DR,M40 9DR,terraced,6,freehold,2026-04-30,150000,sold_price,transaction,rightmove_via_hm_land_registry,2026-08-09
+3 Ninfield Road Manchester M23 2ZG,M23 2ZG,semi-detached,22,freehold,2026-04-27,235000,sold_price,transaction,rightmove_via_hm_land_registry,2026-08-09
+71 Petworth Close Manchester M22 4YR,M22 4YR,terraced,9,leasehold,2026-04-27,219000,sold_price,transaction,rightmove_via_hm_land_registry,2026-08-09
+2 Hollydene Cottage Bibby Lane Manchester M19 1GQ,M19 1GQ,semi-detached,23,freehold,2026-04-27,295000,sold_price,transaction,rightmove_via_hm_land_registry,2026-08-09
+14 Mossdale Road Manchester M23 0NG,M23 0NG,semi-detached,20,freehold,2026-04-24,355000,sold_price,transaction,rightmove_via_hm_land_registry,2026-08-09
+Flat 39 Burford Court Cotterdale Close Manchester M16 8EA,M16 8EA,flat,9,leasehold,2026-04-24,145000,sold_price,transaction,rightmove_via_hm_land_registry,2026-08-09
+34 Sheringham Drive Manchester M27 5QE,M27 5QE,semi-detached,21,freehold,2026-04-24,325000,sold_price,transaction,rightmove_via_hm_land_registry,2026-08-09
+13 Brocklebank Road Manchester M14 6EL,M14 6EL,semi-detached,20,freehold,2026-04-22,370000,sold_price,transaction,rightmove_via_hm_land_registry,2026-08-09
+36 Every Street Manchester M4 7DN,M4 7DN,terraced,17,freehold,2026-04-22,295000,sold_price,transaction,rightmove_via_hm_land_registry,2026-08-09
+Apartment 105 3 Barton Place Hornbeam Way Manchester M4 4AT,M4 4AT,flat,6,leasehold,2026-04-21,150000,sold_price,transaction,rightmove_via_hm_land_registry,2026-08-09
+8 Branksome Road Heaton Mersey Stockport SK4 2AG,SK4 2AG,semi-detached,24,leasehold,2026-04-21,308250,sold_price,transaction,rightmove_via_hm_land_registry,2026-08-09
+6 Dorris Street Manchester M19 2TP,M19 2TP,terraced,14,freehold,2026-04-21,220000,sold_price,transaction,rightmove_via_hm_land_registry,2026-08-09
+21 Henshaw Street Manchester M32 8BT,M32 8BT,terraced,25,leasehold,2026-04-21,295000,sold_price,transaction,rightmove_via_hm_land_registry,2026-08-09
+Flat 3 118 The Highlands Edge Lane Manchester M32 8PX,M32 8PX,flat,15,leasehold,2026-04-21,135000,sold_price,transaction,rightmove_via_hm_land_registry,2026-08-09
+Flat 152 1 Isaac Way Manchester M4 7EE,M4 7EE,flat,15,leasehold,2026-04-21,230000,sold_price,transaction,rightmove_via_hm_land_registry,2026-08-09

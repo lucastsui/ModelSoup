@@ -1,0 +1,53 @@
+{
+  "data_root": "../research_data",
+  "panel_path": "panels/panel_sold_ukhpi_features.csv",
+  "label_path": "panels/backtest_label_ledger.csv",
+  "split_path": "panels/backtest_split_assignments.csv",
+  "prefer_llms": ["claude", "grok", "deepseek", "offline_heuristic"],
+  "deepseek_ssh_host": "anaclast@100.73.106.98",
+  "deepseek_remote_base_url": "http://127.0.0.1:8080/v1",
+  "deepseek_model": "deepseek-v4-flash-abliterated",
+  "pools": {
+    "param": {
+      "top_n": 4,
+      "max_pool_size": 12,
+      "n_proposals": 8
+    },
+    "nn": {
+      "top_n": 3,
+      "max_pool_size": 8,
+      "n_proposals": 5
+    }
+  },
+  "scorer": {
+    "s": 25.0,
+    "alpha": 1.0,
+    "beta": 0.5,
+    "n0": 30.0,
+    "comment": "s scaled up for 10y returns (typical MAE tens of pp, not ~1pp)"
+  },
+  "smoke": {
+    "price_types": ["sold_ukhpi"],
+    "horizons": [120],
+    "areas_include": [
+      "United Kingdom",
+      "England",
+      "London",
+      "North West",
+      "South East",
+      "South West",
+      "West Midlands",
+      "East Midlands",
+      "Yorkshire and The Humber",
+      "East of England",
+      "North East",
+      "Wales",
+      "Scotland"
+    ],
+    "min_as_of": "1968-01-01",
+    "require_lags": true
+  },
+  "default_tolerated_error_pp": 15.0,
+  "cycles": 10,
+  "hybrid_max_workers": 4
+}

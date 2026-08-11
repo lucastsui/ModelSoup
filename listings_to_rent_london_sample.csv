@@ -1,0 +1,11 @@
+listing_id,channel,area,address,property_type,bedrooms,bathrooms,rent_pcm_gbp,rent_pw_gbp,flags,listed_date,agent,source,collected_as_of
+174650714,rent,London,Harrington Road London SW7,flat,2,,10833,2500,,2026-04-19,,rightmove_listing_card,2026-08-09
+91813980,rent,London,"Edge Street, London, W8",terraced,5,,47667,11000,,,,rightmove_listing_card,2026-08-09
+91813962,rent,London,"Forest Road, London, E17",flat,1,,7583,1750,,,,rightmove_listing_card,2026-08-09
+91813878,rent,London,"Hermon Hill,E18",flat,1,,5850,1350,,,,rightmove_listing_card,2026-08-09
+91813869,rent,London,"Sutton Road, Muswell Hill",flat,2,,5256,1213,,,,rightmove_listing_card,2026-08-09
+91813899,rent,London,"GFF 34 Beauval Road, London",flat,2,,7800,1800,,,,rightmove_listing_card,2026-08-09
+91813800,rent,London,"Osborne Mews,",flat,1,,5633,1300,,,,rightmove_listing_card,2026-08-09
+91813794,rent,London,"Alexandra Road, London, W4",flat,2,,9750,2250,,,,rightmove_listing_card,2026-08-09
+91550166,rent,London,"St. James Road, Sutton, SM1",semi-detached,4,,15167,3500,,,,rightmove_listing_card,2026-08-09
+91153560,rent,London,"Oxford Road North, London, W4",flat,2,,10617,2450,,,,rightmove_listing_card,2026-08-09

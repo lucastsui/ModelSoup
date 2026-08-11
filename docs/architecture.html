@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PropView architecture</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 48px 40px;
+      font-family: "Times New Roman", Times, "Liberation Serif", serif;
+      font-size: 12.5px;
+      background: #fff;
+      color: #111;
+      line-height: 1.35;
+    }
+    .figure {
+      max-width: 980px;
+      margin: 0 auto;
+      font-family: inherit;
+      font-size: inherit;
+      position: relative;
+      overflow: visible;
+      padding-right: 24px;
+      padding-left: 24px;
+    }
+    svg.link-layer {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: visible;
+      z-index: 2;
+    }
+    .title {
+      text-align: center;
+      font-size: 12.5px;
+      font-weight: bold;
+      margin: 0 0 28px;
+      letter-spacing: 0.02em;
+      font-family: inherit;
+    }
+    .diagram {
+      max-width: 640px;
+      margin: 0 auto;
+      font-family: inherit;
+      font-size: inherit;
+    }
+    .col h2 {
+      margin: 0 0 12px;
+      font-size: 12.5px;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 0.02em;
+      font-family: inherit;
+    }
+    .scoring-row {
+      display: grid;
+      grid-template-columns: minmax(160px, 0.9fr) auto minmax(200px, 1.2fr);
+      gap: 8px 10px;
+      align-items: center;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    .data-collector-side {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 4px;
+      min-width: 0;
+    }
+    .data-collector-side h3 {
+      margin: 0;
+      font-size: inherit;
+      font-weight: bold;
+      text-align: center;
+      font-family: inherit;
+    }
+    .data-collector-side .box {
+      min-height: 2.8em;
+      padding: 8px 10px;
+    }
+    .scoring-row .arr {
+      text-align: center;
+    }
+    #scoring-box {
+      width: 100%;
+      min-height: 2.8em;
+      max-width: none;
+    }
+    .stack {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+    .box,
+    .pool,
+    .model,
+    .pill {
+      border: 1.25px solid #111;
+      background: #fff;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-family: inherit;
+      font-size: inherit;
+    }
+    .box {
+      padding: 10px 12px;
+    }
+    .arrow-v {
+      text-align: center;
+      font-size: inherit;
+      font-weight: 600;
+      line-height: 1.2;
+      padding: 4px 0;
+      color: #111;
+      font-family: inherit;
+    }
+    .loop {
+      border: none;
+      padding: 0;
+      font-family: inherit;
+      font-size: inherit;
+      position: relative;
+      overflow: visible;
+    }
+    .col {
+      overflow: visible;
+    }
+    .loop-title {
+      text-align: center;
+      font-size: inherit;
+      font-weight: bold;
+      margin-bottom: 36px; /* room for rectangular return arrows into pool tops */
+      font-family: inherit;
+    }
+    .pipeline {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 4px 6px;
+      font-size: inherit;
+      font-family: inherit;
+      margin-bottom: 14px;
+    }
+    .pill {
+      padding: 6px 8px;
+      white-space: nowrap;
+    }
+    .arr {
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: 600;
+    }
+    .chooser-block {
+      margin-top: 4px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .pools-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+    .pools-to-topn {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      max-width: 360px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .pools-to-topn .arrow-v {
+      padding: 2px 0;
+    }
+    .topn-box {
+      width: 100%;
+      margin: 0;
+      min-height: 2.6em;
+      padding: 8px 6px;
+    }
+    .pool {
+      padding: 10px 8px;
+      min-height: 2.6em;
+    }
+    /* Gap between top-n and models; arrows drawn in JS over this region */
+    .arrow-gap {
+      height: 88px;
+      position: relative;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .bin-col {
+      position: absolute;
+      left: -168px;
+      top: 8px;
+      width: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .bin-icon {
+      width: 36px;
+      height: 40px;
+      display: block;
+    }
+    .bin-label {
+      font-size: inherit;
+      font-family: inherit;
+      text-align: center;
+      margin-top: 4px;
+      line-height: 1.25;
+      max-width: 112px;
+    }
+    .models-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    .model-col {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+    .model {
+      padding: 10px 6px;
+      min-height: 2.6em;
+    }
+    .model-action {
+      padding: 8px 6px;
+      min-height: 2.6em;
+      text-align: center;
+    }
+    .model-col .arrow-v {
+      padding: 2px 0;
+    }
+    .sublabel {
+      text-align: center;
+      font-size: inherit;
+      font-family: inherit;
+      margin: 4px 0 6px;
+    }
+    .scorer-label {
+      margin: 2px 0;
+      font-weight: bold;
+    }
+    .offspring-box {
+      max-width: 420px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .caption {
+      margin-top: 22px;
+      font-size: inherit;
+      font-family: inherit;
+      text-align: center;
+      color: #222;
+    }
+    @media print {
+      body { padding: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="figure">
+    <svg class="link-layer" id="link-layer" aria-hidden="true">
+      <defs>
+        <marker id="arrowhead" markerWidth="7.5" markerHeight="7.5" refX="6.5" refY="3.75" orient="auto">
+          <polygon points="0 0, 7.5 3.75, 0 7.5" fill="#111" />
+        </marker>
+      </defs>
+      <g id="link-lines"></g>
+    </svg>
+
+    <p class="title">Model Soup architecture</p>
+
+    <div class="diagram">
+      <div class="col">
+        <div class="loop">
+          <div class="loop-title">Hypothesis pools</div>
+
+          <div class="chooser-block">
+            <div class="pools-row">
+              <div class="pool" id="param-pool">Parameter-based hypotheses</div>
+              <div class="pool" id="nn-pool">Neural network-based hypotheses</div>
+            </div>
+            <div class="pools-to-topn" aria-hidden="true">
+              <span class="arrow-v">↓</span>
+              <span class="arrow-v">↓</span>
+            </div>
+            <div class="pools-row topn-row">
+              <div class="box model-action topn-box" id="topn-param">top-n selection</div>
+              <div class="box model-action topn-box" id="topn-nn">top-n selection</div>
+            </div>
+
+            <!-- Spacer: JS draws top-n → models and top-n → bin here -->
+            <div class="arrow-gap" id="arrow-gap">
+              <div class="bin-col" id="bin-col">
+                <svg class="bin-icon" viewBox="0 0 36 40" aria-label="rubbish bin">
+                  <line x1="8" y1="10" x2="28" y2="10" stroke="#111" stroke-width="1.6" />
+                  <line x1="14" y1="6" x2="22" y2="6" stroke="#111" stroke-width="1.6" />
+                  <line x1="18" y1="6" x2="18" y2="10" stroke="#111" stroke-width="1.6" />
+                  <path d="M10 10 L12 36 H24 L26 10 Z" fill="none" stroke="#111" stroke-width="1.6" stroke-linejoin="round" />
+                  <line x1="15" y1="14" x2="15.5" y2="32" stroke="#111" stroke-width="1.2" />
+                  <line x1="18" y1="14" x2="18" y2="32" stroke="#111" stroke-width="1.2" />
+                  <line x1="21" y1="14" x2="20.5" y2="32" stroke="#111" stroke-width="1.2" />
+                </svg>
+                <div class="bin-label">low score hypotheses removed from evolution loops</div>
+              </div>
+            </div>
+
+            <div class="sublabel">Chooser models</div>
+            <div class="models-row">
+              <div class="model-col">
+                <div class="model" id="model-opus">Opus 5</div>
+                <div class="arrow-v">↓</div>
+                <div class="box model-action">mutate architecture &amp; parameters</div>
+                <div class="arrow-v">↓</div>
+              </div>
+              <div class="model-col">
+                <div class="model" id="model-grok">Grok 4.5</div>
+                <div class="arrow-v">↓</div>
+                <div class="box model-action">mutate architecture &amp; parameters</div>
+                <div class="arrow-v">↓</div>
+              </div>
+              <div class="model-col">
+                <div class="model" id="model-deepseek">DeepSeek v4 Flash</div>
+                <div class="arrow-v">↓</div>
+                <div class="box model-action">mutate architecture &amp; parameters</div>
+                <div class="arrow-v">↓</div>
+              </div>
+            </div>
+
+            <div class="box model-action offspring-box" id="offspring-box">Offspring Hypotheses</div>
+            <div class="arrow-v">↓</div>
+            <div class="sublabel scorer-label">Scorer</div>
+
+            <!-- Data collector sits to the left of Cross-Validation box -->
+            <div class="scoring-row">
+              <div class="data-collector-side">
+                <h3>Data collector</h3>
+                <div class="box" id="research-data">External sources<br />UKHPI, Bank of England, Rightmove, news feeds</div>
+              </div>
+              <span class="arr" aria-hidden="true">→</span>
+              <div class="box model-action offspring-box" id="scoring-box">Cross-Validation and Scoring</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function pt(fig, el, where) {
+      const fr = fig.getBoundingClientRect();
+      const r = el.getBoundingClientRect();
+      const xMid = r.left + r.width / 2 - fr.left;
+      const yMid = r.top + r.height / 2 - fr.top;
+      if (where === "bottom") return { x: xMid, y: r.bottom - fr.top };
+      if (where === "top") return { x: xMid, y: r.top - fr.top };
+      if (where === "left") return { x: r.left - fr.left, y: yMid };
+      if (where === "right") return { x: r.right - fr.left, y: yMid };
+      if (where === "center") return { x: xMid, y: yMid };
+      return { x: xMid, y: yMid };
+    }
+
+    function line(g, a, b, ns) {
+      const el = document.createElementNS(ns, "line");
+      el.setAttribute("x1", a.x);
+      el.setAttribute("y1", a.y);
+      el.setAttribute("x2", b.x);
+      el.setAttribute("y2", b.y);
+      el.setAttribute("stroke", "#111");
+      el.setAttribute("stroke-width", "1.5");
+      el.setAttribute("marker-end", "url(#arrowhead)");
+      g.appendChild(el);
+    }
+
+    function drawAllLinks() {
+      const fig = document.querySelector(".figure");
+      const svg = document.getElementById("link-layer");
+      const g = document.getElementById("link-lines");
+      if (!fig || !svg || !g) return;
+
+      const fr = fig.getBoundingClientRect();
+      svg.setAttribute("width", String(fr.width));
+      svg.setAttribute("height", String(fr.height));
+      while (g.firstChild) g.removeChild(g.firstChild);
+
+      const ns = "http://www.w3.org/2000/svg";
+      const topnP = document.getElementById("topn-param");
+      const topnN = document.getElementById("topn-nn");
+      const models = [
+        document.getElementById("model-opus"),
+        document.getElementById("model-grok"),
+        document.getElementById("model-deepseek"),
+      ];
+      const bin = document.getElementById("bin-col");
+      const research = document.getElementById("research-data");
+      const scoring = document.getElementById("scoring-box");
+
+      if (topnP && topnN && models.every(Boolean)) {
+        const sources = [topnP, topnN];
+        sources.forEach(function (src) {
+          const a = pt(fig, src, "bottom");
+          models.forEach(function (m) {
+            const b = pt(fig, m, "top");
+            line(g, a, b, ns);
+          });
+        });
+      }
+
+      if (topnP && topnN && bin) {
+        // arrows from top-n boxes end on the right side of the bin (bin is on the left)
+        const binPt = pt(fig, bin, "right");
+        binPt.y = pt(fig, bin, "top").y + 18;
+        [topnP, topnN].forEach(function (src) {
+          const a = pt(fig, src, "bottom");
+          line(g, a, binPt, ns);
+        });
+      }
+
+      // Data collector → scoring uses the HTML → between them (no long SVG curve)
+
+      // Rectangular arrows: from RIGHT of Cross-Validation box, up the outside,
+      // then left into the TOP of each hypothesis pool box.
+      const paramPool = document.getElementById("param-pool");
+      const nnPool = document.getElementById("nn-pool");
+      if (scoring && paramPool && nnPool) {
+        const scoreRight = pt(fig, scoring, "right");
+        const paramTop = pt(fig, paramPool, "top");
+        const nnTop = pt(fig, nnPool, "top");
+        // corridor just above the pool boxes (under "Hypothesis pools")
+        const corridorY = Math.min(paramTop.y, nnTop.y) - 18;
+        // vertical rail to the right of the scoring box / loop content
+        const railX = scoreRight.x + 36;
+
+        function ortho(points, withHead) {
+          let d = "M " + points[0].x + " " + points[0].y;
+          for (let i = 1; i < points.length; i++) {
+            d += " L " + points[i].x + " " + points[i].y;
+          }
+          const path = document.createElementNS(ns, "path");
+          path.setAttribute("d", d);
+          path.setAttribute("fill", "none");
+          path.setAttribute("stroke", "#111");
+          path.setAttribute("stroke-width", "1.5");
+          if (withHead) path.setAttribute("marker-end", "url(#arrowhead)");
+          g.appendChild(path);
+        }
+
+        // Trunk: leave scoring on the right, climb to corridor (no head)
+        ortho(
+          [
+            { x: scoreRight.x, y: scoreRight.y },
+            { x: railX, y: scoreRight.y },
+            { x: railX, y: corridorY },
+          ],
+          false
+        );
+        // Branch left → param pool top
+        ortho(
+          [
+            { x: railX, y: corridorY },
+            { x: paramTop.x, y: corridorY },
+            { x: paramTop.x, y: paramTop.y },
+          ],
+          true
+        );
+        // Branch left/right → nn pool top
+        ortho(
+          [
+            { x: railX, y: corridorY },
+            { x: nnTop.x, y: corridorY },
+            { x: nnTop.x, y: nnTop.y },
+          ],
+          true
+        );
+      }
+    }
+
+    window.addEventListener("load", drawAllLinks);
+    window.addEventListener("resize", drawAllLinks);
+    setTimeout(drawAllLinks, 50);
+    setTimeout(drawAllLinks, 200);
+  </script>
+</body>
+</html>

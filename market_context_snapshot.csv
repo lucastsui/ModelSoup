@@ -1,0 +1,17 @@
+as_of_date,key,value,unit,source
+2026-07-20,avg_2y_fixed_mortgage_rate,4.92,percent,rightmove_hpi_via_podium
+2026-08-08,avg_2y_fixed_mortgage_rate,5.09,percent,rightmove_mortgage_tracker_podium
+2026-08-08,avg_5y_fixed_mortgage_rate,5.12,percent,rightmove_mortgage_tracker_podium
+2026-08-08,lowest_2y_fixed_mortgage_rate,4.46,percent,rightmove_mortgage_tracker_podium
+2026-08-08,boe_base_rate,3.75,percent,rightmove_article_via_boe
+2026-07-20,share_sales_completed_without_price_cut,74,percent,rightmove_hpi
+2026-07-20,sales_agreed_h1_2026_vs_h1_2025,-6,percent,rightmove_hpi
+2026-07-20,sales_agreed_h1_2026_vs_h1_2024,0,percent,rightmove_hpi
+2026-07-20,homes_for_sale_vs_prior_year,-1,percent,rightmove_hpi
+2026-07-20,stock_near_12y_high,1,boolean_flag,rightmove_hpi
+2025-12-18,rightmove_forecast_uk_asking_eoy_2026,2,percent,rightmove_2026_predictions_article
+2026-07-20,uk_avg_asking_price,372359,gbp,rightmove_hpi
+2026-07-20,uk_avg_asking_price_mom_pct,-1.0,percent,rightmove_hpi
+2026-07-20,uk_avg_asking_price_yoy_pct,-0.4,percent,rightmove_hpi
+2026-07-20,national_avg_monthly_mortgage_payment_illustrative,1870,gbp_pcm,rightmove_mortgage_article
+2026-07-20,ftb_avg_monthly_mortgage_80ltv_illustrative,1069,gbp_pcm,rightmove_mortgage_article

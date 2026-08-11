@@ -1,0 +1,101 @@
+listing_id,channel,area,address,property_type,bedrooms,bathrooms,asking_price_gbp,price_qualifier,status_note,listed_or_reduced_date,agent,source,collected_as_of
+90117342,sale,London,"Parkholme Road, London, E8",house,5,,2850000,guide_price,,2026-07-13,,rightmove_listing_card,2026-08-09
+148711631,sale,London,"One Hyde Park, Knightsbridge, London, SW1X",apartment,5,,60000000,,,2024-07-05,,rightmove_listing_card,2026-08-09
+155320229,sale,London,"Avenue Road, St Johns Wood, London, NW8",house,10,,49950000,,,2025-06-27,,rightmove_listing_card,2026-08-09
+171185315,sale,London,"Balfour Place, Mayfair, London, W1K",end_of_terrace,7,,49500000,guide_price,,2026-01-19,,rightmove_listing_card,2026-08-09
+152236991,sale,London,"Whistler Square, London, SW1W",town_house,7,,47000000,guide_price,,2024-09-10,,rightmove_listing_card,2026-08-09
+152205953,sale,London,"Whistler Square, Chelsea Barracks, London, SW1W, United Kingdom",house,6,,47000000,,,2024-09-09,,rightmove_listing_card,2026-08-09
+158528285,sale,London,"One Hyde Park, Knightsbridge, London, SW1X",apartment,5,,46000000,,,2025-10-23,,rightmove_listing_card,2026-08-09
+173738432,sale,London,"Cornwall Gardens, London, SW7",house_of_multiple_occupation,14,,45000000,,,2026-03-26,,rightmove_listing_card,2026-08-09
+171587372,sale,London,"Upper Brook Street, London, W1K",terraced,6,,42500000,,,2026-02-03,,rightmove_listing_card,2026-08-09
+171790859,sale,London,"Upper Brook Street, London, W1K",town_house,6,,42500000,,,2026-02-03,,rightmove_listing_card,2026-08-09
+91651875,sale,Manchester,"Painswick Road, Manchester, Greater Manchester, M22",terraced,2,,260000,,,2026-08-05,,rightmove_listing_card,2026-08-09
+166978733,sale,Manchester,"Stenner Lane, Didsbury, M20",detached,9,,4500000,,,2025-09-13,,rightmove_listing_card,2026-08-09
+174820148,sale,Manchester,"Viadux, Albion Street, Manchester, Greater Manchester, M1",penthouse,3,,3500000,guide_price,,2026-04-23,,rightmove_listing_card,2026-08-09
+91038900,sale,Manchester,"Chatsworth Road, Worsley, Manchester, Greater Manchester, M28",detached,6,,3000000,offers_over,,2026-07-17,,rightmove_listing_card,2026-08-09
+152063375,sale,Manchester,"Bindloss Avenue, Eccles, Manchester",block_of_apartments,27,,2999950,offers_over,,2026-05-20,,rightmove_listing_card,2026-08-09
+89067165,sale,Manchester,"Deansgate Square, 9 Owen Street, Manchester, Greater Manchester, M15",penthouse,3,,2850000,guide_price,,2026-05-29,,rightmove_listing_card,2026-08-09
+166293638,sale,Manchester,"East Tower, Deansgate Square",apartment,3,,2600000,,,2025-08-28,,rightmove_listing_card,2026-08-09
+172497539,sale,Manchester,"Great Bridgewater Street, Manchester, M1",apartment,2,,2550000,guide_price,,2026-02-23,,rightmove_listing_card,2026-08-09
+169122416,sale,Manchester,"Chatsworth Road, Worsley, M28",detached,4,,2500000,offers_over,,2026-01-15,,rightmove_listing_card,2026-08-09
+91252767,sale,Manchester,"High Lane, Chorlton, M21",semi-detached,5,,2500000,,,2026-07-23,,rightmove_listing_card,2026-08-09
+91297035,sale,Birmingham,"Tessall Lane, Tessall Lane, Birmingham, West Midlands, B31",apartment,1,,80000,guide_price,,2026-08-04,,rightmove_listing_card,2026-08-09
+172925720,sale,Birmingham,"Great Barr, Walsall, B43",land,,,7000000,,,,,rightmove_listing_card,2026-08-09
+147384647,sale,Birmingham,"Selly Oak, Birmingham, B29",terraced,70,,4560000,offers_in_excess_of,,2024-04-29,,rightmove_listing_card,2026-08-09
+765802459120848,sale,Birmingham,"Care home development site Reservoir Road, Edgbaston, Birmingham",land,,,3900000,guide_price,,,,rightmove_listing_card,2026-08-09
+174384887,sale,Birmingham,"Westbourne Road Edgbaston Birmingham, West Midlands, B15 3TR",detached,8,,3750000,offers_in_region_of,,2025-10-23,,rightmove_listing_card,2026-08-09
+174177500,sale,Birmingham,"Portfolio - x 10 Apartment & 25 Parking Spaces - The Axium, 40 Windmill Street, Birmingham City Cent",apartment,19,,3250000,,,2026-04-08,,rightmove_listing_card,2026-08-09
+90300306,sale,Birmingham,"Wellington Road, Edgbaston, Birmingham B15",detached,7,,3250000,guide_price,,2026-06-30,,rightmove_listing_card,2026-08-09
+90086247,sale,Birmingham,"Farquhar Road, Edgbaston",detached,6,,2995000,guide_price,,2026-06-25,,rightmove_listing_card,2026-08-09
+174178445,sale,Birmingham,"Frederick Road, Edgbaston, Birmingham, B15",detached,4,,2950000,guide_price,,2026-04-08,,rightmove_listing_card,2026-08-09
+87772200,sale,Birmingham,"Frederick Road, Edgbaston",detached,4,,2950000,guide_price,,2026-04-08,,rightmove_listing_card,2026-08-09
+88888899,sale,Leeds,"Leeds Road, Leeds, LS15 8TA",detached,4,,477000,,,2026-05-24,,rightmove_listing_card,2026-08-09
+172173662,sale,Leeds,"Thorner Lane, Scarcroft, Leeds, LS14",detached,8,,5950000,guide_price,,2026-02-13,,rightmove_listing_card,2026-08-09
+89730663,sale,Leeds,"Ling Lane, Scarcroft, Leeds, LS14",detached,7,,4500000,offers_over,,2026-06-15,,rightmove_listing_card,2026-08-09
+174285254,sale,Leeds,"Beech House, Horsforth",detached,8,,3500000,,,2026-02-11,,rightmove_listing_card,2026-08-09
+172905500,sale,Leeds,"Crocodile House, Manor Gardens, Thorner, Leeds",detached,5,,3500000,,,2026-03-05,,rightmove_listing_card,2026-08-09
+89256252,sale,Leeds,"Sandmoor Drive, Alwoodley",detached,8,,3485000,,,2026-06-03,,rightmove_listing_card,2026-08-09
+90681849,sale,Leeds,"Ling Lane, Scarcroft, Leeds LS14 3HX",detached,5,,3100000,fixed_price,,2026-07-22,,rightmove_listing_card,2026-08-09
+173336633,sale,Leeds,"Woodlands Drive, Rawdon, Leeds, West Yorkshire, LS19",detached,8,,3000000,offers_over,,2026-06-01,,rightmove_listing_card,2026-08-09
+173319590,sale,Leeds,"Brenaire Park, Woodlands Drive, Rawdon, Leeds, West Yorkshire",detached,8,,3000000,offers_over,,2026-06-01,,rightmove_listing_card,2026-08-09
+87971901,sale,Leeds,"Trip Garth, Linton, Wetherby, West Yorkshire, LS22",detached,5,,3000000,guide_price,,2026-05-01,,rightmove_listing_card,2026-08-09
+174289013,sale,Bristol,"Keys Avenue, Horfield, Bristol",flat,2,,235000,guide_price,,2026-08-07,,rightmove_listing_card,2026-08-09
+173429669,sale,Bristol,"Clifton, Bristol, BS8",semi-detached,6,,3250000,guide_price,,2026-03-18,,rightmove_listing_card,2026-08-09
+166773716,sale,Bristol,"The Avenue, Clifton, Bristol, BS8",detached,7,,3250000,guide_price,,2025-09-09,,rightmove_listing_card,2026-08-09
+90065502,sale,Bristol,"Stoke Hill, Bristol BS9",detached,6,,2850000,guide_price,,2026-06-24,,rightmove_listing_card,2026-08-09
+90064992,sale,Bristol,"Southerly, Stoke Bishop, Bristol, BS9",detached,6,,2850000,guide_price,,2026-06-24,,rightmove_listing_card,2026-08-09
+167098889,sale,Bristol,"Clifton, Bristol, BS8",terraced,6,,2850000,offers_in_region_of,,2026-06-04,,rightmove_listing_card,2026-08-09
+89815950,sale,Bristol,"West Mall, Clifton, Bristol, BS8.",town_house,5,,2550000,guide_price,,2026-06-17,,rightmove_listing_card,2026-08-09
+88981122,sale,Bristol,"Royal Colonnade, Bristol, Avon, BS1",terraced,5,,2500000,guide_price,,2026-05-27,,rightmove_listing_card,2026-08-09
+90405342,sale,Bristol,"Buckingham Vale, Clifton, Bristol, BS8",semi-detached,5,,2350000,guide_price,,2026-07-02,,rightmove_listing_card,2026-08-09
+89830209,sale,Bristol,"Pembroke Road, Clifton, Bristol BS8",town_house,6,,2350000,offers_in_excess_of,,2026-06-17,,rightmove_listing_card,2026-08-09
+91730493,sale,Edinburgh,"Buchanan Street, Edinburgh, Midlothian, EH6",apartment,1,,150000,offers_over,,2026-08-06,,rightmove_listing_card,2026-08-09
+164546801,sale,Edinburgh,"29 Albany Street, Edinburgh, EH1",serviced_apartments,,,7500000,offers_over,,2025-07-15,,rightmove_listing_card,2026-08-09
+88511715,sale,Edinburgh,"Southernwood, Barnton Avenue, Barnton, Edinburgh, EH4",detached,9,,4800000,offers_over,,2026-05-15,,rightmove_listing_card,2026-08-09
+165185810,sale,Edinburgh,"Lamb's House, Waters Close, Leith, Edinburgh, EH6",detached,10,,3750000,offers_over,,2025-07-31,,rightmove_listing_card,2026-08-09
+174320537,sale,Edinburgh,"Easter Belmont Road, Edinburgh",detached,6,,3600000,offers_over,,2026-04-10,,rightmove_listing_card,2026-08-09
+87682323,sale,Edinburgh,Royal Terrace,town_house,9,,2950000,offers_over,,2026-03-02,,rightmove_listing_card,2026-08-09
+171723989,sale,Edinburgh,"Avallon, Clinton Road, Edinburgh EH9",detached,12,,2900000,offers_in_excess_of,,2026-07-06,,rightmove_listing_card,2026-08-09
+91262151,sale,Edinburgh,"Development Opportunity at 29 Albany Street, Edinburgh EH1",town_house,,,2750000,offers_in_excess_of,,2026-07-23,,rightmove_listing_card,2026-08-09
+170560868,sale,Edinburgh,"Wester Coates Road, Murrayfield",detached,6,,2500000,offers_over,,2026-05-14,,rightmove_listing_card,2026-08-09
+89003355,sale,Edinburgh,"The Wellhouse, Easter Belmont Road, Murrayfield, Edinburgh, EH12",detached,5,,2500000,offers_over,,2026-05-28,,rightmove_listing_card,2026-08-09
+91747485,sale,Liverpool,"One Baltic Square, Liverpool Baltic Triangle Apartment - 6% Rental Yields | Central Liverpool Investment",apartment,1,,200000,offers_in_region_of,,2026-08-07,,rightmove_listing_card,2026-08-09
+89610174,sale,Liverpool,"Smithdown Lane, Liverpool, L7",block_of_apartments,61,,5000000,guide_price,,2026-06-11,,rightmove_listing_card,2026-08-09
+174665711,sale,Liverpool,"Kabannas Liverpool, 27 Mathew Street, Liverpool, L2 6RE",detached,48,,4000000,offers_in_excess_of,,2026-05-12,,rightmove_listing_card,2026-08-09
+173536373,sale,Liverpool,"Kentmere, Park Drive, Crosby, Liverpool, Merseyside, L23",detached,7,,3500000,,,2026-03-20,,rightmove_listing_card,2026-08-09
+88541397,sale,Liverpool,"The Old Vicarage, Church Lane, Lydiate",detached,6,,3500000,,,2026-05-15,,rightmove_listing_card,2026-08-09
+163603142,sale,Liverpool,"Larkhill Lane, Formby, Merseyside, L37 1LX",detached,6,,3000000,,,2026-06-01,,rightmove_listing_card,2026-08-09
+91429632,sale,Liverpool,"Shireburn Road, Formby, Liverpool, L37",detached,5,,2900000,guide_price,,2024-06-14,,rightmove_listing_card,2026-08-09
+87666543,sale,Liverpool,"Victoria Road, Formby, Liverpool, Merseyside, L37",detached,5,,2800000,,,2026-08-05,,rightmove_listing_card,2026-08-09
+88548177,sale,Liverpool,"Massams Lane, Formby",detached,5,,2600000,,,2025-06-03,,rightmove_listing_card,2026-08-09
+172887815,sale,Liverpool,"Shireburn Road, Formby, L37",detached,5,,2500000,guide_price,,2026-08-04,,rightmove_listing_card,2026-08-09
+91748319,sale,Glasgow,"Thornton Street, Maryhill, Glasgow, G20",flat,2,,65000,offers_over,,2026-08-07,,rightmove_listing_card,2026-08-09
+91429752,sale,Glasgow,"La Casa, 22 Park Circus, Glasgow, G3",terraced,9,,2500000,offers_over,,2024-08-30,,rightmove_listing_card,2026-08-09
+171371390,sale,Glasgow,"West Regent Street, City Centre, Glasgow, G2",serviced_apartments,,,2200000,guide_price,,2021-09-22,,rightmove_listing_card,2026-08-09
+90474534,sale,Glasgow,"Humbie Road, Newton Mearns",detached,5,,1600000,offers_over,,2026-07-03,,rightmove_listing_card,2026-08-09
+89551983,sale,Glasgow,"Kings Gate, 33 Victoria Crescent Road, Dowanhill, Glasgow, G12 9DD",town_house,5,,1600000,offers_over,,2026-06-10,,rightmove_listing_card,2026-08-09
+164952458,sale,Glasgow,"Exchange House, Drymen Road, Bearsden, Glasgow",plot,,,1500000,offers_over,,,,rightmove_listing_card,2026-08-09
+91024041,sale,Glasgow,"Cartside Farm Estate, Thorntonhall, Glasgow",detached,6,,1500000,offers_over,,2026-07-17,,rightmove_listing_card,2026-08-09
+89361747,sale,Glasgow,"Kilmardinny Avenue, Bearsden, G61",detached,5,,1375000,offers_over,,2026-06-05,,rightmove_listing_card,2026-08-09
+167500007,sale,Glasgow,"Princes Gardens, Glasgow, G12",terraced,6,,1300000,offers_over,,2026-02-05,,rightmove_listing_card,2026-08-09
+90951462,sale,Glasgow,"Thorntonhall, Glasgow",detached,5,,1250000,offers_over,,2026-07-31,,rightmove_listing_card,2026-08-09
+91558854,sale,Cardiff,"Cowbridge Road East, Cardiff, CF11",terraced,5,,595000,,,2026-08-03,,rightmove_listing_card,2026-08-09
+87665028,sale,Cardiff,"Rudry Road, Lisvane, CF14",detached,7,,8000000,offers_over,,2024-12-23,,rightmove_listing_card,2026-08-09
+174564884,sale,Cardiff,"Llantrisant Road, Llandaff, Cardiff, Wales, CF5",detached,10,,3500000,guide_price,,2026-04-17,,rightmove_listing_card,2026-08-09
+87664443,sale,Cardiff,"Hollybush Road, Cardiff, CF23",detached,6,,3000000,offers_over,,2026-05-07,,rightmove_listing_card,2026-08-09
+173711312,sale,Cardiff,"Hollybush Road, Cyncoed, Cardiff",detached,5,,2500000,,,2026-03-25,,rightmove_listing_card,2026-08-09
+91429629,sale,Cardiff,"Heol Y Parc, Pentyrch, Cardiff, CF15",detached,5,,2500000,guide_price,,2025-05-23,,rightmove_listing_card,2026-08-09
+173521265,sale,Cardiff,"Llandennis Avenue, Cardiff, CF23",detached,6,,2500000,offers_over,,2026-05-07,,rightmove_listing_card,2026-08-09
+173546636,sale,Cardiff,"Maples, Lisvane Road, Lisvane, Cardiff",detached,5,,2000000,offers_in_excess_of,,2026-03-20,,rightmove_listing_card,2026-08-09
+171686849,sale,Cardiff,"Penhill House, Llandaff Road, Cardiff, CF11 9PX",detached,7,,1950000,,,2026-06-16,,rightmove_listing_card,2026-08-09
+168716381,sale,Cardiff,"Newport Road, Roath, Cardiff",block_of_apartments,18,,1850000,offers_in_excess_of,,2026-04-28,,rightmove_listing_card,2026-08-09
+175028933,sale,Cambridge,"Wulfstan Way, Cambridge, CB1",end_of_terrace,3,,495000,guide_price,,2026-07-29,,rightmove_listing_card,2026-08-09
+170632517,sale,Cambridge,"Herschel Road, Cambridge",detached,6,,4500000,guide_price,,2025-12-26,,rightmove_listing_card,2026-08-09
+174839705,sale,Cambridge,"Adams Road, Cambridge, Cambridgeshire",detached,7,,4500000,guide_price,,2026-04-23,,rightmove_listing_card,2026-08-09
+87150771,sale,Cambridge,"Adams Road, Cambridge",detached,7,,4500000,guide_price,,2026-04-23,,rightmove_listing_card,2026-08-09
+171913067,sale,Cambridge,"Glebe Road, Cambridge, CB1",detached,7,,3900000,guide_price,,2026-02-05,,rightmove_listing_card,2026-08-09
+89255046,sale,Cambridge,"Victoria Road, Cambridge",terraced,10,,3100000,guide_price,,2026-06-03,,rightmove_listing_card,2026-08-09
+171983939,sale,Cambridge,"Larmor Drive, Cambridge, Cambridgeshire, CB3",detached,5,,2950000,guide_price,,2026-04-28,,rightmove_listing_card,2026-08-09
+173166674,sale,Cambridge,"Bentley Road, Cambridge, Cambridgeshire",detached,5,,2400000,guide_price,,2026-03-11,,rightmove_listing_card,2026-08-09
+174508622,sale,Cambridge,"Bentley Road, Cambridge",detached,5,,2350000,guide_price,,2026-04-16,,rightmove_listing_card,2026-08-09
+91107000,sale,Cambridge,"Emmanuel Road, Cambridge, Cambridgeshire",semi-detached,4,,2250000,guide_price,,2026-07-20,,rightmove_listing_card,2026-08-09

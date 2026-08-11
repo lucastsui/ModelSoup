@@ -1,0 +1,133 @@
+date,area,price_type,avg_price_gbp,mom_change_pct,yoy_change_pct,days_to_find_buyer,bank_rate_pct,source_url,collected_as_of,price_lag1,mom_lag1,price_lag2,mom_lag2,price_lag3,mom_lag3,fwd_1m_return_pct,fwd_1m_end_date,fwd_3m_return_pct,fwd_3m_end_date
+2025-08-01,Yorkshire and The Humber,asking_rightmove,253762,-1.9,0.4,63,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,,,,,,,1.8939,2025-09-01,-1.5574,2025-11-01
+2025-09-01,Yorkshire and The Humber,asking_rightmove,258568,1.9,2.0,66,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,253762,-1.9,,,,,-1.0589,2025-10-01,-5.1785,2025-12-01
+2025-10-01,Yorkshire and The Humber,asking_rightmove,255830,-1.1,1.9,66,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,258568,1.9,253762,-1.9,,,-2.3531,2025-11-01,-2.7397,2026-01-01
+2025-11-01,Yorkshire and The Humber,asking_rightmove,249810,-2.4,0.01,68,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,255830,-1.1,258568,1.9,253762,-1.9,-1.8542,2025-12-01,1.6328,2026-02-01
+2025-12-01,Yorkshire and The Humber,asking_rightmove,245178,-1.9,0.7,70,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,249810,-2.4,255830,-1.1,258568,1.9,1.4859,2026-01-01,4.2218,2026-03-01
+2026-01-01,Yorkshire and The Humber,asking_rightmove,248821,1.5,1.3,75,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,245178,-1.9,249810,-2.4,255830,-1.1,2.0368,2026-02-01,4.0153,2026-04-01
+2026-02-01,Yorkshire and The Humber,asking_rightmove,253889,2.0,0.9,80,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,248821,1.5,245178,-1.9,249810,-2.4,0.646,2026-03-01,2.698,2026-05-01
+2026-03-01,Yorkshire and The Humber,asking_rightmove,255529,0.6,1.0,76,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,253889,2.0,248821,1.5,245178,-1.9,1.2848,2026-04-01,1.3834,2026-06-01
+2026-04-01,Yorkshire and The Humber,asking_rightmove,258812,1.28,1.05,69,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,255529,0.6,253889,2.0,248821,1.5,0.7446,2026-05-01,0.3547,2026-07-01
+2026-05-01,Yorkshire and The Humber,asking_rightmove,260739,0.7,1.0,62,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,258812,1.28,255529,0.6,253889,2.0,-0.6424,2026-06-01,,
+2026-06-01,Yorkshire and The Humber,asking_rightmove,259064,-0.6,0.1,62,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,260739,0.7,258812,1.28,255529,0.6,0.2571,2026-07-01,,
+2026-07-01,Yorkshire and The Humber,asking_rightmove,259730,0.3,0.4,62,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,259064,-0.6,260739,0.7,258812,1.28,,,,
+2025-08-01,West Midlands,asking_rightmove,295863,-0.4,1.8,59,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,,,,,,,-0.7497,2025-09-01,-1.3672,2025-11-01
+2025-09-01,West Midlands,asking_rightmove,293645,-0.7,-0.1,63,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,295863,-0.4,,,,,0.6229,2025-10-01,-2.1036,2025-12-01
+2025-10-01,West Midlands,asking_rightmove,295474,0.6,1.0,64,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,293645,-0.7,295863,-0.4,,,-1.2373,2025-11-01,-1.3714,2026-01-01
+2025-11-01,West Midlands,asking_rightmove,291818,-1.2,1.3,66,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,295474,0.6,293645,-0.7,295863,-0.4,-1.4907,2025-12-01,0.3351,2026-02-01
+2025-12-01,West Midlands,asking_rightmove,287468,-1.5,1.3,67,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,291818,-1.2,295474,0.6,293645,-0.7,1.3755,2026-01-01,2.3773,2026-03-01
+2026-01-01,West Midlands,asking_rightmove,291422,1.4,1.2,75,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,287468,-1.5,291818,-1.2,295474,0.6,0.4715,2026-02-01,2.6518,2026-04-01
+2026-02-01,West Midlands,asking_rightmove,292796,0.5,1.3,82,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,291422,1.4,287468,-1.5,291818,-1.2,0.5144,2026-03-01,3.8832,2026-05-01
+2026-03-01,West Midlands,asking_rightmove,294302,0.5,1.1,71,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,292796,0.5,291422,1.4,287468,-1.5,1.6473,2026-04-01,3.229,2026-06-01
+2026-04-01,West Midlands,asking_rightmove,299150,1.65,1.21,66,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,294302,0.5,292796,0.5,291422,1.4,1.6768,2026-05-01,0.4727,2026-07-01
+2026-05-01,West Midlands,asking_rightmove,304166,1.7,0.5,61,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,299150,1.65,294302,0.5,292796,0.5,-0.1187,2026-06-01,,
+2026-06-01,West Midlands,asking_rightmove,303805,-0.1,1.3,59,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,304166,1.7,299150,1.65,294302,0.5,-1.0668,2026-07-01,,
+2026-07-01,West Midlands,asking_rightmove,300564,-1.1,1.2,62,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,303805,-0.1,304166,1.7,299150,1.65,,,,
+2025-08-01,Wales,asking_rightmove,270880,0.0,3.0,68,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,,,,,,,-1.2374,2025-09-01,-3.5348,2025-11-01
+2025-09-01,Wales,asking_rightmove,267528,-1.2,0.9,72,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,270880,0.0,,,,,0.1159,2025-10-01,-4.388,2025-12-01
+2025-10-01,Wales,asking_rightmove,267838,0.1,1.8,74,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,267528,-1.2,270880,0.0,,,-2.4392,2025-11-01,-3.6007,2026-01-01
+2025-11-01,Wales,asking_rightmove,261305,-2.4,0.5,71,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,267838,0.1,267528,-1.2,270880,0.0,-2.1109,2025-12-01,0.7397,2026-02-01
+2025-12-01,Wales,asking_rightmove,255789,-2.1,-1.0,77,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,261305,-2.4,267838,0.1,267528,-1.2,0.9402,2026-01-01,4.0385,2026-03-01
+2026-01-01,Wales,asking_rightmove,258194,0.9,-1.6,84,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,255789,-2.1,261305,-2.4,267838,0.1,1.9536,2026-02-01,6.1245,2026-04-01
+2026-02-01,Wales,asking_rightmove,263238,2.0,3.1,87,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,258194,0.9,255789,-2.1,261305,-2.4,1.0944,2026-03-01,4.7858,2026-05-01
+2026-03-01,Wales,asking_rightmove,266119,1.1,1.3,85,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,263238,2.0,258194,0.9,255789,-2.1,2.9641,2026-04-01,2.0066,2026-06-01
+2026-04-01,Wales,asking_rightmove,274007,2.96,1.93,79,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,266119,1.1,263238,2.0,258194,0.9,0.6675,2026-05-01,-0.7248,2026-07-01
+2026-05-01,Wales,asking_rightmove,275836,0.7,1.7,71,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,274007,2.96,266119,1.1,263238,2.0,-1.5868,2026-06-01,,
+2026-06-01,Wales,asking_rightmove,271459,-1.6,-0.3,66,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,275836,0.7,274007,2.96,266119,1.1,0.207,2026-07-01,,
+2026-07-01,Wales,asking_rightmove,272021,0.2,0.4,66,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,271459,-1.6,275836,0.7,274007,2.96,,,,
+2025-08-01,South West,asking_rightmove,380492,-1.8,-0.8,69,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,,,,,,,0.5359,2025-09-01,-2.5333,2025-11-01
+2025-09-01,South West,asking_rightmove,382531,0.5,-1.3,71,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,380492,-1.8,,,,,-0.5592,2025-10-01,-5.0765,2025-12-01
+2025-10-01,South West,asking_rightmove,380392,-0.6,-1.0,72,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,382531,0.5,380492,-1.8,,,-2.5077,2025-11-01,-2.8074,2026-01-01
+2025-11-01,South West,asking_rightmove,370853,-2.5,-1.1,74,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,380392,-0.6,382531,0.5,380492,-1.8,-2.0873,2025-12-01,0.1785,2026-02-01
+2025-12-01,South West,asking_rightmove,363112,-2.1,-2.7,77,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,370853,-2.5,380392,-0.6,382531,0.5,1.8179,2026-01-01,3.5149,2026-03-01
+2026-01-01,South West,asking_rightmove,369713,1.8,-0.4,86,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,363112,-2.1,370853,-2.5,380392,-0.6,0.4874,2026-02-01,4.8843,2026-04-01
+2026-02-01,South West,asking_rightmove,371515,0.5,-1.5,89,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,369713,1.8,363112,-2.1,370853,-2.5,1.1736,2026-03-01,4.9142,2026-05-01
+2026-03-01,South West,asking_rightmove,375875,1.2,-1.8,81,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,371515,0.5,369713,1.8,363112,-2.1,3.1649,2026-04-01,2.4484,2026-06-01
+2026-04-01,South West,asking_rightmove,387771,3.16,-1.67,75,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,375875,1.2,371515,0.5,369713,1.8,0.516,2026-05-01,-0.9632,2026-07-01
+2026-05-01,South West,asking_rightmove,389772,0.5,-2.2,68,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,387771,3.16,375875,1.2,371515,0.5,-1.2043,2026-06-01,,
+2026-06-01,South West,asking_rightmove,385078,-1.2,-1.7,66,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,389772,0.5,387771,3.16,375875,1.2,-0.2706,2026-07-01,,
+2026-07-01,South West,asking_rightmove,384036,-0.3,-0.9,69,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,385078,-1.2,389772,0.5,387771,3.16,,,,
+2025-08-01,South East,asking_rightmove,479634,-1.4,-0.1,66,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,,,,,,,0.0726,2025-09-01,-2.5776,2025-11-01
+2025-09-01,South East,asking_rightmove,479982,0.1,-0.7,69,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,479634,-1.4,,,,,0.0021,2025-10-01,-5.3206,2025-12-01
+2025-10-01,South East,asking_rightmove,479992,0.01,-0.8,71,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,479982,0.1,479634,-1.4,,,-2.6503,2025-11-01,-3.6819,2026-01-01
+2025-11-01,South East,asking_rightmove,467271,-2.7,-0.9,70,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,479992,0.01,479982,0.1,479634,-1.4,-2.7451,2025-12-01,0.58,2026-02-01
+2025-12-01,South East,asking_rightmove,454444,-2.7,-2.7,76,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,467271,-2.7,479992,0.01,479982,0.1,1.7329,2026-01-01,4.8836,2026-03-01
+2026-01-01,South East,asking_rightmove,462319,1.7,-1.6,83,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,454444,-2.7,467271,-2.7,479992,0.01,1.6573,2026-02-01,4.381,2026-04-01
+2026-02-01,South East,asking_rightmove,469981,1.7,-0.9,85,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,462319,1.7,454444,-2.7,467271,-2.7,1.4162,2026-03-01,4.1661,2026-05-01
+2026-03-01,South East,asking_rightmove,476637,1.4,-1.1,78,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,469981,1.7,462319,1.7,454444,-2.7,1.2454,2026-04-01,1.7166,2026-06-01
+2026-04-01,South East,asking_rightmove,482573,1.25,-2.06,72,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,476637,1.4,469981,1.7,462319,1.7,1.4481,2026-05-01,-0.5779,2026-07-01
+2026-05-01,South East,asking_rightmove,489561,1.4,-1.6,67,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,482573,1.25,476637,1.4,469981,1.7,-0.9686,2026-06-01,,
+2026-06-01,South East,asking_rightmove,484819,-1.0,-1.6,65,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,489561,1.4,482573,1.25,476637,1.4,-1.0385,2026-07-01,,
+2026-07-01,South East,asking_rightmove,479784,-1.0,-1.4,67,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,484819,-1.0,489561,1.4,482573,1.25,,,,
+2025-08-01,Scotland,asking_rightmove,197620,-1.0,2.9,33,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,,,,,,,0.7722,2025-09-01,-1.8131,2025-11-01
+2025-09-01,Scotland,asking_rightmove,199146,0.8,2.6,33,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,197620,-1.0,,,,,0.6583,2025-10-01,-5.6471,2025-12-01
+2025-10-01,Scotland,asking_rightmove,200457,0.7,1.3,33,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,199146,0.8,197620,-1.0,,,-3.2027,2025-11-01,-6.6438,2026-01-01
+2025-11-01,Scotland,asking_rightmove,194037,-3.2,0.4,34,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,200457,0.7,199146,0.8,197620,-1.0,-3.1628,2025-12-01,0.401,2026-02-01
+2025-12-01,Scotland,asking_rightmove,187900,-3.2,1.3,37,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,194037,-3.2,200457,0.7,199146,0.8,-0.405,2026-01-01,6.1884,2026-03-01
+2026-01-01,Scotland,asking_rightmove,187139,-0.4,1.7,42,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,187900,-3.2,194037,-3.2,200457,0.7,4.1018,2026-02-01,11.2125,2026-04-01
+2026-02-01,Scotland,asking_rightmove,194815,4.1,2.3,50,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,187139,-0.4,187900,-3.2,194037,-3.2,2.4192,2026-03-01,5.4169,2026-05-01
+2026-03-01,Scotland,asking_rightmove,199528,2.4,1.0,39,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,194815,4.1,187139,-0.4,187900,-3.2,4.3072,2026-04-01,3.7504,2026-06-01
+2026-04-01,Scotland,asking_rightmove,208122,4.31,3.75,33,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,199528,2.4,194815,4.1,187139,-0.4,-1.3233,2026-05-01,-2.0315,2026-07-01
+2026-05-01,Scotland,asking_rightmove,205368,-1.3,1.9,31,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,208122,4.31,199528,2.4,194815,4.1,0.8,2026-06-01,,
+2026-06-01,Scotland,asking_rightmove,207011,0.8,3.3,31,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,205368,-1.3,208122,4.31,199528,2.4,-1.5057,2026-07-01,,
+2026-07-01,Scotland,asking_rightmove,203894,-1.5,2.2,29,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,207011,0.8,205368,-1.3,208122,4.31,,,,
+2025-08-01,North West,asking_rightmove,268393,-0.2,2.6,58,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,,,,,,,0.7012,2025-09-01,-1.3823,2025-11-01
+2025-09-01,North West,asking_rightmove,270275,0.7,3.2,59,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,268393,-0.2,,,,,-0.878,2025-10-01,-1.9624,2025-12-01
+2025-10-01,North West,asking_rightmove,267902,-0.9,1.9,58,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,270275,0.7,268393,-0.2,,,-1.2016,2025-11-01,-0.5371,2026-01-01
+2025-11-01,North West,asking_rightmove,264683,-1.2,1.9,61,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,267902,-0.9,270275,0.7,268393,-0.2,0.1088,2025-12-01,1.0171,2026-02-01
+2025-12-01,North West,asking_rightmove,264971,0.1,2.6,65,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,264683,-1.2,267902,-0.9,270275,0.7,0.5631,2026-01-01,2.1455,2026-03-01
+2026-01-01,North West,asking_rightmove,266463,0.6,2.9,68,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,264971,0.1,264683,-1.2,267902,-0.9,0.3423,2026-02-01,1.9841,2026-04-01
+2026-02-01,North West,asking_rightmove,267375,0.3,2.9,74,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,266463,0.6,264971,0.1,264683,-1.2,1.2271,2026-03-01,3.5886,2026-05-01
+2026-03-01,North West,asking_rightmove,270656,1.2,2.6,66,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,267375,0.3,266463,0.6,264971,0.1,0.4042,2026-04-01,1.3755,2026-06-01
+2026-04-01,North West,asking_rightmove,271750,0.4,2.0,60,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,270656,1.2,267375,0.3,266463,0.6,1.9209,2026-05-01,1.2578,2026-07-01
+2026-05-01,North West,asking_rightmove,276970,1.9,2.6,57,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,271750,0.4,270656,1.2,267375,0.3,-0.9355,2026-06-01,,
+2026-06-01,North West,asking_rightmove,274379,-0.9,0.7,57,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,276970,1.9,271750,0.4,270656,1.2,0.2876,2026-07-01,,
+2026-07-01,North West,asking_rightmove,275168,0.3,2.3,57,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,274379,-0.9,276970,1.9,271750,0.4,,,,
+2025-08-01,North East,asking_rightmove,194799,-1.0,1.1,52,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,,,,,,,-0.0318,2025-09-01,-0.2731,2025-11-01
+2025-09-01,North East,asking_rightmove,194737,0.0,0.5,54,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,194799,-1.0,,,,,0.0436,2025-10-01,-5.2871,2025-12-01
+2025-10-01,North East,asking_rightmove,194822,0.01,1.1,54,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,194737,0.0,194799,-1.0,,,-0.2849,2025-11-01,1.2535,2026-01-01
+2025-11-01,North East,asking_rightmove,194267,-0.3,2.4,55,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,194822,0.01,194737,0.0,194799,-1.0,-5.058,2025-12-01,-0.8756,2026-02-01
+2025-12-01,North East,asking_rightmove,184441,-5.1,-0.8,59,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,194267,-0.3,194822,0.01,194737,0.0,6.9524,2026-01-01,5.6338,2026-03-01
+2026-01-01,North East,asking_rightmove,197264,7.0,3.4,64,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,184441,-5.1,194267,-0.3,194822,0.01,-2.3816,2026-02-01,0.584,2026-04-01
+2026-02-01,North East,asking_rightmove,192566,-2.4,1.3,67,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,197264,7.0,184441,-5.1,194267,-0.3,1.1767,2026-03-01,4.2702,2026-05-01
+2026-03-01,North East,asking_rightmove,194832,1.2,0.6,60,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,192566,-2.4,197264,7.0,184441,-5.1,1.8395,2026-04-01,3.1078,2026-06-01
+2026-04-01,North East,asking_rightmove,198416,1.84,2.16,55,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,194832,1.2,192566,-2.4,197264,7.0,1.196,2026-05-01,-0.7666,2026-07-01
+2026-05-01,North East,asking_rightmove,200789,1.2,2.7,50,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,198416,1.84,194832,1.2,192566,-2.4,0.0488,2026-06-01,,
+2026-06-01,North East,asking_rightmove,200887,0.0,3.2,52,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,200789,1.2,198416,1.84,194832,1.2,-1.9872,2026-07-01,,
+2026-07-01,North East,asking_rightmove,196895,-2.0,0.0,53,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,200887,0.0,200789,1.2,198416,1.84,,,,
+2025-08-01,London,asking_rightmove,666983,-2.6,-1.6,66,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,,,,,,,1.2131,2025-09-01,0.3084,2025-11-01
+2025-09-01,London,asking_rightmove,675074,1.2,-1.1,71,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,666983,-2.6,,,,,1.544,2025-10-01,-2.0573,2025-12-01
+2025-10-01,London,asking_rightmove,685497,1.5,-1.4,70,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,675074,1.2,666983,-2.6,,,-2.4007,2025-11-01,-0.8337,2026-01-01
+2025-11-01,London,asking_rightmove,669040,-2.4,-2.1,72,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,685497,1.5,675074,1.2,666983,-2.6,-1.1739,2025-12-01,1.8313,2026-02-01
+2025-12-01,London,asking_rightmove,661186,-1.2,0.0,78,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,669040,-2.4,685497,1.5,675074,1.2,2.8125,2026-01-01,2.9948,2026-03-01
+2026-01-01,London,asking_rightmove,679782,2.8,0.9,87,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,661186,-1.2,669040,-2.4,685497,1.5,0.2221,2026-02-01,0.0537,2026-04-01
+2026-02-01,London,asking_rightmove,681292,0.2,-1.1,89,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,679782,2.8,661186,-1.2,669040,-2.4,-0.0448,2026-03-01,0.5952,2026-05-01
+2026-03-01,London,asking_rightmove,680987,0.0,-2.1,80,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,681292,0.2,679782,2.8,661186,-1.2,-0.1234,2026-04-01,0.8947,2026-06-01
+2026-04-01,London,asking_rightmove,680147,-0.12,-2.72,74,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,680987,0.0,681292,0.2,679782,2.8,0.7645,2026-05-01,-0.5733,2026-07-01
+2026-05-01,London,asking_rightmove,685347,0.8,-2.4,71,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,680147,-0.12,680987,0.0,681292,0.2,0.2529,2026-06-01,,
+2026-06-01,London,asking_rightmove,687080,0.3,-1.2,68,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,685347,0.8,680147,-0.12,680987,0.0,-1.5765,2026-07-01,,
+2026-07-01,London,asking_rightmove,676248,-1.6,-1.2,70,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,687080,0.3,685347,0.8,680147,-0.12,,,,
+2025-08-01,East of England,asking_rightmove,420729,-0.4,0.6,66,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,,,,,,,-0.4497,2025-09-01,-1.5376,2025-11-01
+2025-09-01,East of England,asking_rightmove,418837,-0.4,0.2,66,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,420729,-0.4,,,,,0.3383,2025-10-01,-4.3848,2025-12-01
+2025-10-01,East of England,asking_rightmove,420254,0.3,-0.6,67,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,418837,-0.4,420729,-0.4,,,-1.4263,2025-11-01,-1.832,2026-01-01
+2025-11-01,East of England,asking_rightmove,414260,-1.4,-0.6,70,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,420254,0.3,418837,-0.4,420729,-0.4,-3.3283,2025-12-01,0.1702,2026-02-01
+2025-12-01,East of England,asking_rightmove,400472,-3.3,-1.7,74,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,414260,-1.4,420254,0.3,418837,-0.4,3.0172,2026-01-01,4.7382,2026-03-01
+2026-01-01,East of England,asking_rightmove,412555,3.0,-0.3,79,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,400472,-3.3,414260,-1.4,420254,0.3,0.5842,2026-02-01,2.1044,2026-04-01
+2026-02-01,East of England,asking_rightmove,414965,0.6,0.2,83,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,412555,3.0,400472,-3.3,414260,-1.4,1.0801,2026-03-01,2.685,2026-05-01
+2026-03-01,East of England,asking_rightmove,419447,1.1,-0.2,76,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,414965,0.6,412555,3.0,400472,-3.3,0.4268,2026-04-01,0.7271,2026-06-01
+2026-04-01,East of England,asking_rightmove,421237,0.43,-0.88,69,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,419447,1.1,414965,0.6,412555,3.0,1.1561,2026-05-01,-0.4059,2026-07-01
+2026-05-01,East of England,asking_rightmove,426107,1.2,-0.1,66,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,421237,0.43,419447,1.1,414965,0.6,-0.8472,2026-06-01,,
+2026-06-01,East of England,asking_rightmove,422497,-0.8,-0.6,64,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,426107,1.2,421237,0.43,419447,1.1,-0.703,2026-07-01,,
+2026-07-01,East of England,asking_rightmove,419527,-0.7,-0.7,66,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,422497,-0.8,426107,1.2,421237,0.43,,,,
+2025-08-01,East Midlands,asking_rightmove,291440,-0.3,1.1,69,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,,,,,,,0.0474,2025-09-01,-2.3706,2025-11-01
+2025-09-01,East Midlands,asking_rightmove,291578,0.04,0.9,68,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,291440,-0.3,,,,,-0.5659,2025-10-01,-3.1926,2025-12-01
+2025-10-01,East Midlands,asking_rightmove,289928,-0.6,1.1,70,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,291578,0.04,291440,-0.3,,,-1.8615,2025-11-01,-3.218,2026-01-01
+2025-11-01,East Midlands,asking_rightmove,284531,-1.9,-0.8,71,4.0,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,289928,-0.6,291578,0.04,291440,-0.3,-0.795,2025-12-01,0.7504,2026-02-01
+2025-12-01,East Midlands,asking_rightmove,282269,-0.8,0.8,75,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,284531,-1.9,289928,-0.6,291578,0.04,-0.592,2026-01-01,2.8161,2026-03-01
+2026-01-01,East Midlands,asking_rightmove,280598,-0.6,-0.2,80,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,282269,-0.8,284531,-1.9,289928,-0.6,2.1625,2026-02-01,3.8468,2026-04-01
+2026-02-01,East Midlands,asking_rightmove,286666,2.2,0.4,86,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,280598,-0.6,282269,-0.8,284531,-1.9,1.2391,2026-03-01,2.693,2026-05-01
+2026-03-01,East Midlands,asking_rightmove,290218,1.2,1.3,79,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,286666,2.2,280598,-0.6,282269,-0.8,0.4045,2026-04-01,1.5478,2026-06-01
+2026-04-01,East Midlands,asking_rightmove,291392,0.4,-0.23,73,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,290218,1.2,286666,2.2,280598,-0.6,1.0275,2026-05-01,0.0268,2026-07-01
+2026-05-01,East Midlands,asking_rightmove,294386,1.0,0.8,68,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,291392,0.4,290218,1.2,286666,2.2,0.1101,2026-06-01,,
+2026-06-01,East Midlands,asking_rightmove,294710,0.1,0.9,65,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,294386,1.0,291392,0.4,290218,1.2,-1.0994,2026-07-01,,
+2026-07-01,East Midlands,asking_rightmove,291470,-1.1,-0.3,68,3.75,https://www.rightmove.co.uk/news/house-price-index/,2026-08-10,294710,0.1,294386,1.0,291392,0.4,,,,

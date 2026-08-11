@@ -1,0 +1,5 @@
+target,aggregation,area,as_of_date,start_date,end_date,change_pct,tolerated_error_pp,model_id,notes
+price,mean_asking,London,2026-07-20,2026-07-01,2026-10-01,-1.7,1.0,supply_pressure_v3,example only; not scored yet
+price,mean_asking,North West,2026-07-20,2026-07-01,2026-10-01,0.8,1.0,momentum_yoy_v1,example only
+rent,mean_ftb_2bed,UK,2026-07-20,2026-07-01,2026-10-01,0.5,1.5,rent_vs_mortgage_gap_v1,example only
+price,mean_sold,Manchester,2026-04-01,2026-04-01,2026-07-01,1.0,2.0,local_sold_naive_v0,example only

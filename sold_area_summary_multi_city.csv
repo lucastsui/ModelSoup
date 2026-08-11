@@ -1,0 +1,19 @@
+area,city_slug,window,avg_sold_price_gbp,avg_detached_gbp,avg_semi_gbp,avg_terraced_gbp,avg_flat_gbp,majority_type,yoy_change_pct,vs_peak_pct,peak_year,peak_avg_gbp,sold_index_result_count,source,collected_as_of,url
+Manchester,manchester,last_year,287071,,332759,268822,206273,semi-detached,4.0,7.0,2022,268165,,rightmove_house_prices_page,2026-08-09,https://www.rightmove.co.uk/house-prices/manchester.html
+London,london,last_year,656255,,767639,765355,500861,,-7.0,-11.0,2023,736370,,rightmove_house_prices_page,2026-08-09,https://www.rightmove.co.uk/house-prices/london.html
+Birmingham,birmingham,last_year,260837,,280068,237773,148146,terraced,1.0,4.0,2023,249709,,rightmove_house_prices_page,2026-08-09,https://www.rightmove.co.uk/house-prices/birmingham.html
+Leeds,leeds,last_year,291537,509192,287449,225627,,semi-detached,,6.0,2022,275434,,rightmove_house_prices_page,2026-08-09,https://www.rightmove.co.uk/house-prices/leeds.html
+Bristol,bristol,last_year,396956,,442031,404645,283574,terraced,1.0,3.0,2022,384721,,rightmove_house_prices_page,2026-08-09,https://www.rightmove.co.uk/house-prices/bristol.html
+Edinburgh,edinburgh,last_year,343827,580166,,418320,296552,,2.0,2.0,2022,337050,,rightmove_house_prices_page,2026-08-09,https://www.rightmove.co.uk/house-prices/edinburgh.html
+Liverpool,liverpool,last_year,233085,,252192,182572,155492,terraced,,11.0,2022,209728,,rightmove_house_prices_page,2026-08-09,https://www.rightmove.co.uk/house-prices/liverpool.html
+Sheffield,sheffield,last_year,259357,428021,259710,212107,,semi-detached,-2.0,1.0,2023,256636,,rightmove_house_prices_page,2026-08-09,https://www.rightmove.co.uk/house-prices/sheffield.html
+Nottingham,nottingham,last_year,226547,,231527,187292,,terraced,,2.0,2023,222084,,rightmove_house_prices_page,2026-08-09,https://www.rightmove.co.uk/house-prices/nottingham.html
+Cardiff,cardiff,last_year,310158,,364155,281207,174964,terraced,,4.0,2023,297626,,rightmove_house_prices_page,2026-08-09,https://www.rightmove.co.uk/house-prices/cardiff.html
+Glasgow,glasgow,last_year,243301,,281611,231196,183444,,3.0,9.0,2023,224069,,rightmove_house_prices_page,2026-08-09,https://www.rightmove.co.uk/house-prices/glasgow.html
+Newcastle Upon Tyne,newcastle-upon-tyne,last_year,241274,,245532,231214,149691,semi-detached,,2.0,2022,235582,,rightmove_house_prices_page,2026-08-09,https://www.rightmove.co.uk/house-prices/newcastle-upon-tyne.html
+Brighton and Hove,brighton-and-hove,last_year,495623,,575539,552187,324845,,,-1.0,2022,502644,,rightmove_house_prices_page,2026-08-09,https://www.rightmove.co.uk/house-prices/brighton-and-hove.html
+Cambridge,cambridge,last_year,581287,,642936,572718,334531,terraced,,,,,,rightmove_house_prices_page,2026-08-09,https://www.rightmove.co.uk/house-prices/cambridge.html
+Oxford,oxford,last_year,576148,,602458,535794,343841,semi-detached,-3.0,-5.0,2023,603628,,rightmove_house_prices_page,2026-08-09,https://www.rightmove.co.uk/house-prices/oxford.html
+Reading,reading,last_year,399377,,460156,355905,227570,terraced,-5.0,-4.0,2023,414911,,rightmove_house_prices_page,2026-08-09,https://www.rightmove.co.uk/house-prices/reading.html
+Bath,bath,last_year,562585,,608742,541401,375873,terraced,-4.0,-5.0,2023,591685,,rightmove_house_prices_page,2026-08-09,https://www.rightmove.co.uk/house-prices/bath.html
+York,york,last_year,332286,,331973,329732,212612,terraced,,-3.0,2023,341181,,rightmove_house_prices_page,2026-08-09,https://www.rightmove.co.uk/house-prices/york.html

@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Automatic Hypothesis Generation to Predict Property Price of London</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #121821;
+      --border: #243041;
+      --text: #e7eef8;
+      --muted: #8b9bb0;
+      --param: #5b9fd4;
+      --nn: #c48bff;
+      --link: #3a4658;
+      --link-hi: #f0c14a;
+      --dot-hi: #ffe08a;
+      --provisional: #6b7280;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, #152033 0%, var(--bg) 55%);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      height: 100vh;
+      overflow: hidden;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 22px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(10, 14, 20, 0.7);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 5;
+    }
+    .header-left {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      align-items: center;
+      flex: 1;
+      min-width: 0;
+    }
+    h1 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 0;
+      letter-spacing: 0.02em;
+    }
+    h1 span { color: var(--muted); font-weight: 400; }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    select, button {
+      background: var(--panel);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 0.85rem;
+    }
+    button { cursor: pointer; }
+    button:hover { border-color: #3d516b; }
+    .swatch {
+      width: 10px; height: 10px; border-radius: 50%; display: inline-block;
+      margin-right: 8px;
+      flex-shrink: 0;
+      vertical-align: middle;
+    }
+    main {
+      flex: 1 1 auto;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    #chart {
+      flex: 1 1 auto;
+      width: 100%;
+      min-height: 0;
+      overflow: hidden;
+    }
+    .header-legend {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      font-size: 0.78rem;
+      color: #c9d7ea;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 12px;
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+    .header-legend .legend-row {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+    }
+    .header-legend .link-sample {
+      width: 18px;
+      height: 0;
+      border-top: 2px solid var(--link);
+      margin-right: 8px;
+      flex-shrink: 0;
+      opacity: 0.95;
+    }
+    .axis text,
+    .axis-label {
+      fill: var(--muted);
+      font-size: 22px;
+      font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+      white-space: nowrap;
+    }
+    .axis path, .axis line { stroke: #2a3648; }
+    .grid line { stroke: #1a2330; stroke-dasharray: 2,3; }
+    .link {
+      fill: none;
+      stroke: var(--link);
+      stroke-width: 1.2;
+      opacity: 0.55;
+      pointer-events: none;
+    }
+    .link.dim { opacity: 0.08; }
+    .link.hi {
+      stroke: var(--link-hi);
+      stroke-width: 2.2;
+      opacity: 0.95;
+    }
+    .dot {
+      stroke: #0b0f14;
+      stroke-width: 1.2;
+      cursor: pointer;
+    }
+    .dot.dim { opacity: 0.12; }
+    .dot.hi {
+      stroke: var(--dot-hi);
+      stroke-width: 2.4;
+    }
+    .dot.provisional { stroke-dasharray: 2 2; }
+    .tooltip {
+      position: fixed;
+      pointer-events: none;
+      background: rgba(15, 20, 28, 0.95);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 0.78rem;
+      color: var(--text);
+      z-index: 20;
+      max-width: min(560px, 92vw);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+      display: none;
+      white-space: normal;
+      line-height: 1.35;
+    }
+    .tooltip .tip-label {
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .tooltip .tip-name {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.72rem;
+      color: #c9d7ea;
+    }
+    .tooltip .tip-pred { color: #e7eef8; }
+    .tooltip div { margin: 2px 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1>Automatic Hypothesis Generation to Predict Property Price of London</h1>
+    </div>
+    <div class="header-legend" aria-label="Chart legend">
+      <span class="legend-row"><i class="swatch" style="background:var(--param)"></i>Parameter Model</span>
+      <span class="legend-row"><i class="swatch" style="background:var(--nn)"></i>Neural Network Model</span>
+      <span class="legend-row"><span class="link-sample"></span>Evolutionary Path</span>
+    </div>
+  </header>
+  <main>
+    <div id="chart"></div>
+  </main>
+  <div class="tooltip" id="tip"></div>
+
+  <script>
+    const POLL_MS = 500; // re-check data + page shell 2× per second
+
+    const state = {
+      graph: null,
+      run: '__all__',
+      pool: 'all',
+      hoverId: null,
+      dataSig: null,
+      htmlSig: null,
+      lastOkAt: null,
+      pollTimer: null,
+      // live evolution: yellow parent links while framework considers parents
+      live: null,       // {seq, phase, hypothesis_ids, child_id, mode, ...}
+      liveSeq: null,
+    };
+
+    const tip = document.getElementById('tip');
+
+    function graphSignature(graph) {
+      // Stable fingerprint of plottable content (ignores clock-only generated_at churn if content same)
+      const nodes = (graph.nodes || [])
+        .map(n => [
+          n.id,
+          n.cycle,
+          n.pool,
+          n.S,
+          n.MAE,
+          n.scored,
+          (n.mutation_summary || '').slice(0, 80),
+          (n.prediction_summary || '').slice(0, 80),
+          (n.parents || []).join('|'),
+        ].join(':'))
+        .sort()
+        .join(';');
+      const edges = (graph.edges || [])
+        .map(e => `${e.source}>${e.target}:${e.kind || ''}`)
+        .sort()
+        .join(';');
+      return `${graph.generated_at || ''}|n=${(graph.nodes || []).length}|e=${(graph.edges || []).length}|${nodes}|${edges}`;
+    }
+
+    function simpleHash(str) {
+      let h = 0;
+      for (let i = 0; i < str.length; i++) {
+        h = ((h << 5) - h) + str.charCodeAt(i);
+        h |= 0;
+      }
+      return String(h) + ':' + str.length;
+    }
+
+    function plottableCount(graph) {
+      if (!graph || !Array.isArray(graph.nodes)) return 0;
+      return graph.nodes.filter(n => n.S != null && !Number.isNaN(+n.S)).length;
+    }
+
+    function applyGraph(graph, { force = false } = {}) {
+      // Never replace a chart that has points with an empty snapshot
+      // (happens during wipe / rebuild races). Keep last good graph.
+      const incoming = plottableCount(graph);
+      const current = plottableCount(state.graph);
+      if (!force && incoming === 0 && current > 0) {
+        return false;
+      }
+      const sig = graphSignature(graph);
+      if (!force && sig === state.dataSig) return false;
+      state.dataSig = sig;
+      state.graph = graph;
+      state.run = '__all__';
+      state.pool = 'all';
+      state.lastOkAt = Date.now();
+      return true;
+    }
+
+    async function load() {
+      const res = await fetch('lineage_graph.json?t=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) throw new Error('Missing lineage_graph.json — run: python3 build_lineage_data.py');
+      const graph = await res.json();
+      applyGraph(graph, { force: true });
+      render();
+    }
+
+    async function pollOnce() {
+      // 1) Data: re-render in place when lineage_graph.json changes
+      let dataChanged = false;
+      try {
+        const res = await fetch('lineage_graph.json?t=' + Date.now(), { cache: 'no-store' });
+        if (res.ok) {
+          const text = await res.text();
+          // Skip empty / truncated payloads mid-write
+          if (text && text.trim().length > 2) {
+            let graph;
+            try {
+              graph = JSON.parse(text);
+            } catch {
+              graph = null;
+            }
+            if (graph && applyGraph(graph)) {
+              state.hoverId = null;
+              tip.style.display = 'none';
+              tip.style.visibility = 'hidden';
+              dataChanged = true;
+            }
+          }
+        }
+      } catch {
+        // ignore transient poll errors — keep showing last good chart
+      }
+
+      // 1b) Live evolution events (consider parents → yellow links)
+      let liveChanged = false;
+      try {
+        const res = await fetch('live_events.json?t=' + Date.now(), { cache: 'no-store' });
+        if (res.ok) {
+          const ev = await res.json();
+          if (ev.seq !== state.liveSeq) {
+            state.liveSeq = ev.seq;
+            state.live = ev;
+            liveChanged = true;
+          }
+        }
+      } catch {
+        // no live file yet — fine
+      }
+
+      if (dataChanged || liveChanged) {
+        render();
+      }
+
+      // 2) Page shell: if index.html itself changed (layout/CSS), full reload once
+      try {
+        const res = await fetch('index.html?t=' + Date.now(), { cache: 'no-store' });
+        if (res.ok) {
+          const text = await res.text();
+          const sig = simpleHash(text);
+          if (state.htmlSig == null) {
+            state.htmlSig = sig;
+          } else if (sig !== state.htmlSig) {
+            location.reload();
+            return;
+          }
+        }
+      } catch {
+        // ignore HTML poll errors; data poll is primary
+      }
+    }
+
+    function startPolling() {
+      if (state.pollTimer) clearInterval(state.pollTimer);
+      state.pollTimer = setInterval(pollOnce, POLL_MS);
+      // Also re-check when the tab becomes visible again
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') pollOnce();
+      });
+    }
+
+    function filtered() {
+      if (!state.graph || !Array.isArray(state.graph.nodes)) {
+        return { nodes: [], edges: [] };
+      }
+      let nodes = state.graph.nodes.slice();
+      let edges = (state.graph.edges || []).slice();
+      // Plottable nodes only (scored or provisional with an S value)
+      nodes = nodes.filter(n => n.S != null && !Number.isNaN(+n.S));
+      const ids = new Set(nodes.map(n => n.id));
+      edges = edges.filter(e => ids.has(e.source) && ids.has(e.target));
+      return { nodes, edges };
+    }
+
+    function adjacency(nodes, edges) {
+      const forward = new Map();
+      const backward = new Map();
+      const idset = new Set(nodes.map(n => n.id));
+      for (const e of edges) {
+        if (!idset.has(e.source) || !idset.has(e.target)) continue;
+        if (!forward.has(e.source)) forward.set(e.source, []);
+        if (!backward.has(e.target)) backward.set(e.target, []);
+        forward.get(e.source).push(e.target);
+        backward.get(e.target).push(e.source);
+      }
+      return { forward, backward };
+    }
+
+    /** Directed walk only (no undirected siblings / cousins). */
+    function walkDirected(startId, adj) {
+      const seen = new Set([startId]);
+      const stack = [startId];
+      while (stack.length) {
+        const cur = stack.pop();
+        for (const n of (adj.get(cur) || [])) {
+          if (!seen.has(n)) {
+            seen.add(n);
+            stack.push(n);
+          }
+        }
+      }
+      return seen;
+    }
+
+    /**
+     * True lineage for hover: ancestors (via parent links) + self + descendants (via children).
+     * Does NOT undirected-flood through shared parents (that lit the whole web).
+     */
+    function lineageSet(id, forward, backward) {
+      const ancestors = walkDirected(id, backward);
+      const descendants = walkDirected(id, forward);
+      const lineage = new Set(ancestors);
+      for (const n of descendants) lineage.add(n);
+      return {
+        lineage,
+        ancestors,
+        descendants,
+        nAncestors: ancestors.size - 1, // exclude self
+        nDescendants: descendants.size - 1,
+      };
+    }
+
+    /** Parent→child edge lies on the directed lineage of `id` if both ends are in the set. */
+    function edgeOnLineage(e, lineage) {
+      return lineage.has(e.source) && lineage.has(e.target);
+    }
+
+    function render() {
+      const { nodes, edges } = filtered();
+      const el = document.getElementById('chart');
+      el.innerHTML = '';
+      const width = el.clientWidth || 800;
+      const height = el.clientHeight || 560;
+      // Room for 22px tick labels + axis title inside the viewport
+      const margin = { top: 24, right: 36, bottom: 88, left: 108 };
+      const w = Math.max(40, width - margin.left - margin.right);
+      const h = Math.max(40, height - margin.top - margin.bottom);
+
+      if (!nodes.length) {
+        // Prefer never blanking the UI: if we somehow have no plottable
+        // points, show a calm waiting message (not a filter error).
+        el.innerHTML = '<div style="padding:24px;color:#8b9bb0">Waiting for hypotheses…</div>';
+        return;
+      }
+
+      // X = cycle number; small fixed pool offset so param/nn sit side by side
+      // (param slightly left of the tick, nn slightly right)
+      const POOL_X_OFFSET = 0.03; // fraction of one cycle unit (was 0.12; tightened to 1/4)
+      const cycles = [...new Set(nodes.map(n => +n.cycle))].sort((a, b) => a - b);
+      const x = d3.scaleLinear()
+        .domain([d3.min(cycles) - 0.4, d3.max(cycles) + 0.4])
+        .range([0, w]);
+      const yExtent = d3.extent(nodes, d => +d.S);
+      const pad = Math.max(0.02, (yExtent[1] - yExtent[0]) * 0.08 || 0.05);
+      const y = d3.scaleLinear()
+        .domain([yExtent[0] - pad, yExtent[1] + pad])
+        .range([h, 0]);
+
+      const svg = d3.select('#chart').append('svg')
+        .attr('width', width)
+        .attr('height', height);
+      const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+      // grid
+      g.append('g').attr('class', 'grid')
+        .call(d3.axisLeft(y).ticks(8).tickSize(-w).tickFormat(''))
+        .select('.domain').remove();
+
+      // axes — same style for left and bottom ticks + titles (single-line labels only)
+      const xAxis = d3.axisBottom(x)
+        .ticks(cycles.length)
+        .tickFormat(d => (Number.isInteger(d) ? String(d) : ''));
+      const xAxisG = g.append('g').attr('class', 'axis')
+        .attr('transform', `translate(0,${h})`)
+        .call(xAxis);
+      // Force tick labels onto one line (no soft wrap / multi-tspan)
+      xAxisG.selectAll('text')
+        .style('white-space', 'nowrap')
+        .each(function () {
+          const t = d3.select(this);
+          const full = (t.text() || '').replace(/\s+/g, '\u00A0');
+          t.text(full);
+          t.selectAll('tspan').remove();
+        });
+      g.append('g').attr('class', 'axis').call(d3.axisLeft(y).ticks(8));
+
+      // One-line axis titles (never wrap)
+      g.append('text')
+        .attr('class', 'axis-label')
+        .attr('x', w / 2).attr('y', h + 62)
+        .attr('text-anchor', 'middle')
+        .style('white-space', 'nowrap')
+        .text('Run\u00A0number');
+      g.append('text')
+        .attr('class', 'axis-label')
+        .attr('transform', 'rotate(-90)')
+        .attr('x', -h / 2).attr('y', -78)
+        .attr('text-anchor', 'middle')
+        .style('white-space', 'nowrap')
+        .text('Score');
+
+      const pos = new Map();
+      nodes.forEach(n => {
+        const poolOff = n.pool === 'nn' ? POOL_X_OFFSET : -POOL_X_OFFSET;
+        const px = x(+n.cycle + poolOff);
+        const py = y(+n.S);
+        pos.set(n.id, { x: px, y: py, n });
+      });
+
+      // links as curves parent -> child
+      const linkSel = g.append('g').attr('class', 'links').selectAll('path')
+        .data(edges.filter(e => pos.has(e.source) && pos.has(e.target)))
+        .join('path')
+        .attr('class', 'link')
+        .attr('d', e => {
+          const s = pos.get(e.source);
+          const t = pos.get(e.target);
+          const mx = (s.x + t.x) / 2;
+          return `M${s.x},${s.y}C${mx},${s.y} ${mx},${t.y} ${t.x},${t.y}`;
+        });
+
+      // Live "considering parents" temp edges (same yellow as hover ancestry)
+      const liveLinksG = g.append('g').attr('class', 'live-links');
+      const liveHids = (
+        state.live
+        && (state.live.phase === 'considering' || state.live.phase === 'placed')
+        && Array.isArray(state.live.hypothesis_ids)
+      ) ? state.live.hypothesis_ids.filter(Boolean) : [];
+
+      // Parents: highlight the SOURCE run column (parent_cycle), not same-id
+      // carry-forwards on a later run. Children: prefer child_cycle.
+      const parentCycle = state.live && state.live.parent_cycle != null
+        ? +state.live.parent_cycle : null;
+      const childCycle = state.live && state.live.child_cycle != null
+        ? +state.live.child_cycle : null;
+
+      function pickNodeForHid(hid, preferCycle) {
+        const cands = nodes.filter(n => n.hypothesis_id === hid);
+        if (!cands.length) return null;
+        if (preferCycle != null) {
+          const exact = cands.filter(n => +n.cycle === preferCycle);
+          if (exact.length) return exact[0];
+          // nearest at or before preferCycle, else earliest
+          const before = cands.filter(n => +n.cycle <= preferCycle)
+            .sort((a, b) => +b.cycle - +a.cycle);
+          if (before.length) return before[0];
+          return cands.slice().sort((a, b) => +a.cycle - +b.cycle)[0];
+        }
+        // default: earliest cycle (original appearance)
+        return cands.slice().sort((a, b) => +a.cycle - +b.cycle)[0];
+      }
+
+      const liveParentNodes = [];
+      for (const hid of liveHids) {
+        const n = pickNodeForHid(hid, parentCycle);
+        if (n) liveParentNodes.push(n);
+      }
+      let liveChildNode = null;
+      if (state.live && state.live.child_id) {
+        liveChildNode = pickNodeForHid(state.live.child_id, childCycle);
+      }
+      const liveNodes = liveChildNode
+        ? [...liveParentNodes, liveChildNode]
+        : liveParentNodes.slice();
+      const liveNodeIds = new Set(liveNodes.map(n => n.id));
+      const liveHidSet = new Set(liveNodes.map(n => n.hypothesis_id));
+
+      // Temp yellow: parent–parent (2 parents) and/or parent→child when placed
+      const tempEdges = [];
+      if (liveParentNodes.length === 2) {
+        const a = liveParentNodes[0], b = liveParentNodes[1];
+        if (pos.has(a.id) && pos.has(b.id)) {
+          tempEdges.push({ source: a.id, target: b.id });
+        }
+      }
+      if (liveChildNode && pos.has(liveChildNode.id)) {
+        for (const p of liveParentNodes) {
+          if (pos.has(p.id)) {
+            tempEdges.push({ source: p.id, target: liveChildNode.id });
+          }
+        }
+      }
+      // lineage (1 parent, not yet placed): no temp edge — hi on that parent only
+      liveLinksG.selectAll('path')
+        .data(tempEdges)
+        .join('path')
+        .attr('class', 'link hi')
+        .attr('d', e => {
+          const s = pos.get(e.source);
+          const t = pos.get(e.target);
+          const mx = (s.x + t.x) / 2;
+          return `M${s.x},${s.y}C${mx},${s.y} ${mx},${t.y} ${t.x},${t.y}`;
+        });
+
+      const { forward, backward } = adjacency(nodes, edges);
+
+      const dotSel = g.append('g').attr('class', 'dots').selectAll('circle')
+        .data(nodes)
+        .join('circle')
+        .attr('class', d => `dot${d.scored === false ? ' provisional' : ''}`)
+        .attr('cx', d => pos.get(d.id).x)
+        .attr('cy', d => pos.get(d.id).y)
+        .attr('r', d => d.scored === false ? 5.5 : 6.5)
+        .attr('fill', d => d.pool === 'nn' ? 'var(--nn)' : 'var(--param)')
+        .attr('opacity', d => d.scored === false ? 0.75 : 0.95)
+        .on('mouseenter', (event, d) => onHover(d, true, event))
+        .on('mousemove', (event) => placeTooltip(event))
+        .on('mouseleave', (event, d) => onHover(d, false, event))
+        .on('click', (event, d) => onHover(d, true, event));
+
+      // Live reproduction highlight: yellow hi only — do NOT dim the rest of the chart
+      if (liveNodeIds.size && !state.hoverId) {
+        linkSel
+          .classed('dim', false)
+          .classed('hi', e => liveNodeIds.has(e.source) && liveNodeIds.has(e.target));
+        dotSel
+          .classed('dim', false)
+          .classed('hi', n => liveHidSet.has(n.hypothesis_id) || liveNodeIds.has(n.id));
+      }
+
+      function placeTooltip(event) {
+        if (tip.style.display === 'none' || !event) return;
+        const pad = 10;
+        const gap = 14;
+        // Must be visible to measure; keep off-screen briefly if first paint
+        tip.style.display = 'block';
+        tip.style.visibility = 'hidden';
+        tip.style.left = '0px';
+        tip.style.top = '0px';
+        const tw = tip.offsetWidth || 280;
+        const th = tip.offsetHeight || 80;
+        tip.style.visibility = 'visible';
+
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+        let left = event.clientX + gap;
+        let top = event.clientY + gap;
+
+        // Prefer bottom-right of cursor; flip if that would clip
+        if (left + tw + pad > vw) {
+          left = event.clientX - tw - gap;
+        }
+        if (left < pad) left = pad;
+        if (left + tw + pad > vw) left = Math.max(pad, vw - tw - pad);
+
+        if (top + th + pad > vh) {
+          top = event.clientY - th - gap;
+        }
+        if (top < pad) top = pad;
+        if (top + th + pad > vh) top = Math.max(pad, vh - th - pad);
+
+        tip.style.left = Math.round(left) + 'px';
+        tip.style.top = Math.round(top) + 'px';
+      }
+
+      function onHover(d, on, event) {
+        if (!on) {
+          state.hoverId = null;
+          linkSel.classed('hi', false).classed('dim', false);
+          dotSel.classed('hi', false).classed('dim', false);
+          tip.style.display = 'none';
+          tip.style.visibility = 'hidden';
+          return;
+        }
+        state.hoverId = d.id;
+        const lin = lineageSet(d.id, forward, backward);
+        const { lineage } = lin;
+        // Only edges on the directed ancestry/descendency DAG (not cousins via shared parents)
+        linkSel
+          .classed('dim', e => !edgeOnLineage(e, lineage))
+          .classed('hi', e => edgeOnLineage(e, lineage));
+        dotSel
+          .classed('dim', n => !lineage.has(n.id))
+          .classed('hi', n => lineage.has(n.id));
+
+        const name = d.hypothesis_id || d.id || 'hypothesis';
+        const mut = (d.mutation_summary || '').trim()
+          || mutationFallback(d)
+          || '—';
+        const pred = (d.prediction_summary || '').trim()
+          || predictionLine(d)
+          || '—';
+        tip.innerHTML = `
+          <div><span class="tip-label">name:</span> <span class="tip-name">${esc(name)}</span></div>
+          <div><span class="tip-label">mutation:</span> <span class="tip-pred">${esc(mut)}</span></div>
+          <div><span class="tip-label">prediction:</span> <span class="tip-pred">${esc(pred)}</span></div>
+        `;
+        tip.style.display = 'block';
+        placeTooltip(event);
+      }
+    }
+
+    function mutationFallback(d) {
+      const parents = d.parents || [];
+      if (!parents.length) return 'Seed hypothesis (no parents)';
+      if (parents.length === 1) return `Evolved from ${parents[0]}`;
+      return `Combined parents ${parents.join(' + ')}`;
+    }
+
+    function esc(s) {
+      return String(s ?? '').replace(/[&<>"']/g, c => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+      })[c]);
+    }
+
+    function parseParams(d) {
+      if (d.params && typeof d.params === 'object') return d.params;
+      try {
+        return JSON.parse(d.params_json || '{}') || {};
+      } catch {
+        return {};
+      }
+    }
+
+    /** Plain-English one-liner about house price / rent forecast. */
+    function predictionLine(d) {
+      const kind = d.kind || '';
+      const p = parseParams(d);
+      const sc = (x, dig = 2) => {
+        const n = Number(x);
+        if (!Number.isFinite(n)) return String(x);
+        const t = n.toFixed(dig);
+        return t.replace(/\.?0+$/, '');
+      };
+      // Soften scale wording: 1 = full strength, 0.5 = half as strong, etc.
+      const strength = (scale) => {
+        const s = Number(scale);
+        if (!Number.isFinite(s) || Math.abs(s - 1) < 0.05) return '';
+        if (s < 1) return ` (about ${sc(s * 100, 0)}% as strong)`;
+        return ` (about ${sc(s, 2)}× as strong)`;
+      };
+      const wMom = Number(p.w_mom ?? 0.5);
+      const momPct = Number.isFinite(wMom) ? Math.round(wMom * 100) : 50;
+      const yoyPct = 100 - momPct;
+
+      switch (kind) {
+        case 'zero':
+          return 'House prices will not change over the forecast period';
+        case 'constant':
+          return `House prices drift by a fixed amount each month (about ${sc(p.c ?? 0)} percentage points per month)`;
+        case 'last_mom':
+          return `House prices keep rising or falling at the same pace as last month’s change${strength(p.scale)}`;
+        case 'last_yoy_scaled':
+          return `House prices keep rising or falling at the same pace as the last year-on-year change${strength(p.scale)}`;
+        case 'blend_mom_yoy':
+          return `House-price change mixes last month’s trend (${momPct}%) with last year’s trend (${yoyPct}%)${strength(p.scale)}`;
+        case 'mean_reversion':
+          return `If recent house-price growth is hot, expect it to cool (and if weak, to recover) before projecting forward`;
+        case 'rate_penalty':
+          return `House prices follow recent growth, but higher Bank Rate means weaker expected price rises`;
+        case 'momentum_lag':
+          return 'House prices follow a weighted mix of the last few months of price momentum';
+        case 'ridge_linear':
+          return 'House-price change is a weighted mix of recent price trends, rates, and related market features (linear fit)';
+        case 'linear_nn':
+          return 'House-price change is learned as a linear combination of recent market features';
+        case 'mlp':
+          return 'House-price change is learned by a small neural network from recent market features';
+        default: {
+          const notes = String(d.notes || '').toLowerCase();
+          if (notes.includes('rent')) {
+            return 'Forecasts rent change from recent market signals';
+          }
+          if (kind) {
+            return `Forecasts house-price change using the “${kind}” rule`;
+          }
+          return 'Forecasts house-price change over the horizon';
+        }
+      }
+    }
+
+    load()
+      .then(() => startPolling())
+      .catch(err => {
+        const el = document.getElementById('chart');
+        el.innerHTML = `<div style="padding:24px;color:#8b9bb0">${String(err)}<br>From this folder run: python3 build_lineage_data.py && python3 -m http.server 8765</div>`;
+        // Keep trying so the page recovers when data appears
+        startPolling();
+      });
+
+    window.addEventListener('resize', () => {
+      if (state.graph) render();
+    });
+  </script>
+</body>
+</html>

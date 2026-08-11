@@ -1,0 +1,133 @@
+date,area,metric,aggregation,avg_asking_price_gbp,mom_change_pct,yoy_change_pct,days_to_find_buyer,source,collected_as_of
+2026-07-01,Yorkshire and The Humber,avg_asking_price,mean,259730,0.3,0.4,62,rightmove_hpi,2026-08-09
+2026-07-01,West Midlands,avg_asking_price,mean,300564,-1.1,1.2,62,rightmove_hpi,2026-08-09
+2026-07-01,Wales,avg_asking_price,mean,272021,0.2,0.4,66,rightmove_hpi,2026-08-09
+2026-07-01,South West,avg_asking_price,mean,384036,-0.3,-0.9,69,rightmove_hpi,2026-08-09
+2026-07-01,South East,avg_asking_price,mean,479784,-1.0,-1.4,67,rightmove_hpi,2026-08-09
+2026-07-01,Scotland,avg_asking_price,mean,203894,-1.5,2.2,29,rightmove_hpi,2026-08-09
+2026-07-01,North West,avg_asking_price,mean,275168,0.3,2.3,57,rightmove_hpi,2026-08-09
+2026-07-01,North East,avg_asking_price,mean,196895,-2.0,0.0,53,rightmove_hpi,2026-08-09
+2026-07-01,London,avg_asking_price,mean,676248,-1.6,-1.2,70,rightmove_hpi,2026-08-09
+2026-07-01,East of England,avg_asking_price,mean,419527,-0.7,-0.7,66,rightmove_hpi,2026-08-09
+2026-07-01,East Midlands,avg_asking_price,mean,291470,-1.1,-0.3,68,rightmove_hpi,2026-08-09
+2026-06-01,Yorkshire and The Humber,avg_asking_price,mean,259064,-0.6,0.1,62,rightmove_hpi,2026-08-09
+2026-06-01,West Midlands,avg_asking_price,mean,303805,-0.1,1.3,59,rightmove_hpi,2026-08-09
+2026-06-01,Wales,avg_asking_price,mean,271459,-1.6,-0.3,66,rightmove_hpi,2026-08-09
+2026-06-01,South West,avg_asking_price,mean,385078,-1.2,-1.7,66,rightmove_hpi,2026-08-09
+2026-06-01,South East,avg_asking_price,mean,484819,-1.0,-1.6,65,rightmove_hpi,2026-08-09
+2026-06-01,Scotland,avg_asking_price,mean,207011,0.8,3.3,31,rightmove_hpi,2026-08-09
+2026-06-01,North West,avg_asking_price,mean,274379,-0.9,0.7,57,rightmove_hpi,2026-08-09
+2026-06-01,North East,avg_asking_price,mean,200887,0.0,3.2,52,rightmove_hpi,2026-08-09
+2026-06-01,London,avg_asking_price,mean,687080,0.3,-1.2,68,rightmove_hpi,2026-08-09
+2026-06-01,East of England,avg_asking_price,mean,422497,-0.8,-0.6,64,rightmove_hpi,2026-08-09
+2026-06-01,East Midlands,avg_asking_price,mean,294710,0.1,0.9,65,rightmove_hpi,2026-08-09
+2026-05-01,Yorkshire and The Humber,avg_asking_price,mean,260739,0.7,1.0,62,rightmove_hpi,2026-08-09
+2026-05-01,West Midlands,avg_asking_price,mean,304166,1.7,0.5,61,rightmove_hpi,2026-08-09
+2026-05-01,Wales,avg_asking_price,mean,275836,0.7,1.7,71,rightmove_hpi,2026-08-09
+2026-05-01,South West,avg_asking_price,mean,389772,0.5,-2.2,68,rightmove_hpi,2026-08-09
+2026-05-01,South East,avg_asking_price,mean,489561,1.4,-1.6,67,rightmove_hpi,2026-08-09
+2026-05-01,Scotland,avg_asking_price,mean,205368,-1.3,1.9,31,rightmove_hpi,2026-08-09
+2026-05-01,North West,avg_asking_price,mean,276970,1.9,2.6,57,rightmove_hpi,2026-08-09
+2026-05-01,North East,avg_asking_price,mean,200789,1.2,2.7,50,rightmove_hpi,2026-08-09
+2026-05-01,London,avg_asking_price,mean,685347,0.8,-2.4,71,rightmove_hpi,2026-08-09
+2026-05-01,East of England,avg_asking_price,mean,426107,1.2,-0.1,66,rightmove_hpi,2026-08-09
+2026-05-01,East Midlands,avg_asking_price,mean,294386,1.0,0.8,68,rightmove_hpi,2026-08-09
+2026-04-01,Yorkshire and The Humber,avg_asking_price,mean,258812,1.28,1.05,69,rightmove_hpi,2026-08-09
+2026-04-01,West Midlands,avg_asking_price,mean,299150,1.65,1.21,66,rightmove_hpi,2026-08-09
+2026-04-01,Wales,avg_asking_price,mean,274007,2.96,1.93,79,rightmove_hpi,2026-08-09
+2026-04-01,South West,avg_asking_price,mean,387771,3.16,-1.67,75,rightmove_hpi,2026-08-09
+2026-04-01,South East,avg_asking_price,mean,482573,1.25,-2.06,72,rightmove_hpi,2026-08-09
+2026-04-01,Scotland,avg_asking_price,mean,208122,4.31,3.75,33,rightmove_hpi,2026-08-09
+2026-04-01,North West,avg_asking_price,mean,271750,0.4,2.0,60,rightmove_hpi,2026-08-09
+2026-04-01,North East,avg_asking_price,mean,198416,1.84,2.16,55,rightmove_hpi,2026-08-09
+2026-04-01,London,avg_asking_price,mean,680147,-0.12,-2.72,74,rightmove_hpi,2026-08-09
+2026-04-01,East of England,avg_asking_price,mean,421237,0.43,-0.88,69,rightmove_hpi,2026-08-09
+2026-04-01,East Midlands,avg_asking_price,mean,291392,0.4,-0.23,73,rightmove_hpi,2026-08-09
+2026-03-01,Yorkshire and The Humber,avg_asking_price,mean,255529,0.6,1.0,76,rightmove_hpi,2026-08-09
+2026-03-01,West Midlands,avg_asking_price,mean,294302,0.5,1.1,71,rightmove_hpi,2026-08-09
+2026-03-01,Wales,avg_asking_price,mean,266119,1.1,1.3,85,rightmove_hpi,2026-08-09
+2026-03-01,South West,avg_asking_price,mean,375875,1.2,-1.8,81,rightmove_hpi,2026-08-09
+2026-03-01,South East,avg_asking_price,mean,476637,1.4,-1.1,78,rightmove_hpi,2026-08-09
+2026-03-01,Scotland,avg_asking_price,mean,199528,2.4,1.0,39,rightmove_hpi,2026-08-09
+2026-03-01,North West,avg_asking_price,mean,270656,1.2,2.6,66,rightmove_hpi,2026-08-09
+2026-03-01,North East,avg_asking_price,mean,194832,1.2,0.6,60,rightmove_hpi,2026-08-09
+2026-03-01,London,avg_asking_price,mean,680987,0.0,-2.1,80,rightmove_hpi,2026-08-09
+2026-03-01,East of England,avg_asking_price,mean,419447,1.1,-0.2,76,rightmove_hpi,2026-08-09
+2026-03-01,East Midlands,avg_asking_price,mean,290218,1.2,1.3,79,rightmove_hpi,2026-08-09
+2026-02-01,Yorkshire and The Humber,avg_asking_price,mean,253889,2.0,0.9,80,rightmove_hpi,2026-08-09
+2026-02-01,West Midlands,avg_asking_price,mean,292796,0.5,1.3,82,rightmove_hpi,2026-08-09
+2026-02-01,Wales,avg_asking_price,mean,263238,2.0,3.1,87,rightmove_hpi,2026-08-09
+2026-02-01,South West,avg_asking_price,mean,371515,0.5,-1.5,89,rightmove_hpi,2026-08-09
+2026-02-01,South East,avg_asking_price,mean,469981,1.7,-0.9,85,rightmove_hpi,2026-08-09
+2026-02-01,Scotland,avg_asking_price,mean,194815,4.1,2.3,50,rightmove_hpi,2026-08-09
+2026-02-01,North West,avg_asking_price,mean,267375,0.3,2.9,74,rightmove_hpi,2026-08-09
+2026-02-01,North East,avg_asking_price,mean,192566,-2.4,1.3,67,rightmove_hpi,2026-08-09
+2026-02-01,London,avg_asking_price,mean,681292,0.2,-1.1,89,rightmove_hpi,2026-08-09
+2026-02-01,East of England,avg_asking_price,mean,414965,0.6,0.2,83,rightmove_hpi,2026-08-09
+2026-02-01,East Midlands,avg_asking_price,mean,286666,2.2,0.4,86,rightmove_hpi,2026-08-09
+2026-01-01,Yorkshire and The Humber,avg_asking_price,mean,248821,1.5,1.3,75,rightmove_hpi,2026-08-09
+2026-01-01,West Midlands,avg_asking_price,mean,291422,1.4,1.2,75,rightmove_hpi,2026-08-09
+2026-01-01,Wales,avg_asking_price,mean,258194,0.9,-1.6,84,rightmove_hpi,2026-08-09
+2026-01-01,South West,avg_asking_price,mean,369713,1.8,-0.4,86,rightmove_hpi,2026-08-09
+2026-01-01,South East,avg_asking_price,mean,462319,1.7,-1.6,83,rightmove_hpi,2026-08-09
+2026-01-01,Scotland,avg_asking_price,mean,187139,-0.4,1.7,42,rightmove_hpi,2026-08-09
+2026-01-01,North West,avg_asking_price,mean,266463,0.6,2.9,68,rightmove_hpi,2026-08-09
+2026-01-01,North East,avg_asking_price,mean,197264,7.0,3.4,64,rightmove_hpi,2026-08-09
+2026-01-01,London,avg_asking_price,mean,679782,2.8,0.9,87,rightmove_hpi,2026-08-09
+2026-01-01,East of England,avg_asking_price,mean,412555,3.0,-0.3,79,rightmove_hpi,2026-08-09
+2026-01-01,East Midlands,avg_asking_price,mean,280598,-0.6,-0.2,80,rightmove_hpi,2026-08-09
+2025-12-01,Yorkshire and The Humber,avg_asking_price,mean,245178,-1.9,0.7,70,rightmove_hpi,2026-08-09
+2025-12-01,West Midlands,avg_asking_price,mean,287468,-1.5,1.3,67,rightmove_hpi,2026-08-09
+2025-12-01,Wales,avg_asking_price,mean,255789,-2.1,-1.0,77,rightmove_hpi,2026-08-09
+2025-12-01,South West,avg_asking_price,mean,363112,-2.1,-2.7,77,rightmove_hpi,2026-08-09
+2025-12-01,South East,avg_asking_price,mean,454444,-2.7,-2.7,76,rightmove_hpi,2026-08-09
+2025-12-01,Scotland,avg_asking_price,mean,187900,-3.2,1.3,37,rightmove_hpi,2026-08-09
+2025-12-01,North West,avg_asking_price,mean,264971,0.1,2.6,65,rightmove_hpi,2026-08-09
+2025-12-01,North East,avg_asking_price,mean,184441,-5.1,-0.8,59,rightmove_hpi,2026-08-09
+2025-12-01,London,avg_asking_price,mean,661186,-1.2,0.0,78,rightmove_hpi,2026-08-09
+2025-12-01,East of England,avg_asking_price,mean,400472,-3.3,-1.7,74,rightmove_hpi,2026-08-09
+2025-12-01,East Midlands,avg_asking_price,mean,282269,-0.8,0.8,75,rightmove_hpi,2026-08-09
+2025-11-01,Yorkshire and The Humber,avg_asking_price,mean,249810,-2.4,0.01,68,rightmove_hpi,2026-08-09
+2025-11-01,West Midlands,avg_asking_price,mean,291818,-1.2,1.3,66,rightmove_hpi,2026-08-09
+2025-11-01,Wales,avg_asking_price,mean,261305,-2.4,0.5,71,rightmove_hpi,2026-08-09
+2025-11-01,South West,avg_asking_price,mean,370853,-2.5,-1.1,74,rightmove_hpi,2026-08-09
+2025-11-01,South East,avg_asking_price,mean,467271,-2.7,-0.9,70,rightmove_hpi,2026-08-09
+2025-11-01,Scotland,avg_asking_price,mean,194037,-3.2,0.4,34,rightmove_hpi,2026-08-09
+2025-11-01,North West,avg_asking_price,mean,264683,-1.2,1.9,61,rightmove_hpi,2026-08-09
+2025-11-01,North East,avg_asking_price,mean,194267,-0.3,2.4,55,rightmove_hpi,2026-08-09
+2025-11-01,London,avg_asking_price,mean,669040,-2.4,-2.1,72,rightmove_hpi,2026-08-09
+2025-11-01,East of England,avg_asking_price,mean,414260,-1.4,-0.6,70,rightmove_hpi,2026-08-09
+2025-11-01,East Midlands,avg_asking_price,mean,284531,-1.9,-0.8,71,rightmove_hpi,2026-08-09
+2025-10-01,Yorkshire and The Humber,avg_asking_price,mean,255830,-1.1,1.9,66,rightmove_hpi,2026-08-09
+2025-10-01,West Midlands,avg_asking_price,mean,295474,0.6,1.0,64,rightmove_hpi,2026-08-09
+2025-10-01,Wales,avg_asking_price,mean,267838,0.1,1.8,74,rightmove_hpi,2026-08-09
+2025-10-01,South West,avg_asking_price,mean,380392,-0.6,-1.0,72,rightmove_hpi,2026-08-09
+2025-10-01,South East,avg_asking_price,mean,479992,0.01,-0.8,71,rightmove_hpi,2026-08-09
+2025-10-01,Scotland,avg_asking_price,mean,200457,0.7,1.3,33,rightmove_hpi,2026-08-09
+2025-10-01,North West,avg_asking_price,mean,267902,-0.9,1.9,58,rightmove_hpi,2026-08-09
+2025-10-01,North East,avg_asking_price,mean,194822,0.01,1.1,54,rightmove_hpi,2026-08-09
+2025-10-01,London,avg_asking_price,mean,685497,1.5,-1.4,70,rightmove_hpi,2026-08-09
+2025-10-01,East of England,avg_asking_price,mean,420254,0.3,-0.6,67,rightmove_hpi,2026-08-09
+2025-10-01,East Midlands,avg_asking_price,mean,289928,-0.6,1.1,70,rightmove_hpi,2026-08-09
+2025-09-01,Yorkshire and The Humber,avg_asking_price,mean,258568,1.9,2.0,66,rightmove_hpi,2026-08-09
+2025-09-01,West Midlands,avg_asking_price,mean,293645,-0.7,-0.1,63,rightmove_hpi,2026-08-09
+2025-09-01,Wales,avg_asking_price,mean,267528,-1.2,0.9,72,rightmove_hpi,2026-08-09
+2025-09-01,South West,avg_asking_price,mean,382531,0.5,-1.3,71,rightmove_hpi,2026-08-09
+2025-09-01,South East,avg_asking_price,mean,479982,0.1,-0.7,69,rightmove_hpi,2026-08-09
+2025-09-01,Scotland,avg_asking_price,mean,199146,0.8,2.6,33,rightmove_hpi,2026-08-09
+2025-09-01,North West,avg_asking_price,mean,270275,0.7,3.2,59,rightmove_hpi,2026-08-09
+2025-09-01,North East,avg_asking_price,mean,194737,0.0,0.5,54,rightmove_hpi,2026-08-09
+2025-09-01,London,avg_asking_price,mean,675074,1.2,-1.1,71,rightmove_hpi,2026-08-09
+2025-09-01,East of England,avg_asking_price,mean,418837,-0.4,0.2,66,rightmove_hpi,2026-08-09
+2025-09-01,East Midlands,avg_asking_price,mean,291578,0.04,0.9,68,rightmove_hpi,2026-08-09
+2025-08-01,Yorkshire and The Humber,avg_asking_price,mean,253762,-1.9,0.4,63,rightmove_hpi,2026-08-09
+2025-08-01,West Midlands,avg_asking_price,mean,295863,-0.4,1.8,59,rightmove_hpi,2026-08-09
+2025-08-01,Wales,avg_asking_price,mean,270880,0.0,3.0,68,rightmove_hpi,2026-08-09
+2025-08-01,South West,avg_asking_price,mean,380492,-1.8,-0.8,69,rightmove_hpi,2026-08-09
+2025-08-01,South East,avg_asking_price,mean,479634,-1.4,-0.1,66,rightmove_hpi,2026-08-09
+2025-08-01,Scotland,avg_asking_price,mean,197620,-1.0,2.9,33,rightmove_hpi,2026-08-09
+2025-08-01,North West,avg_asking_price,mean,268393,-0.2,2.6,58,rightmove_hpi,2026-08-09
+2025-08-01,North East,avg_asking_price,mean,194799,-1.0,1.1,52,rightmove_hpi,2026-08-09
+2025-08-01,London,avg_asking_price,mean,666983,-2.6,-1.6,66,rightmove_hpi,2026-08-09
+2025-08-01,East of England,avg_asking_price,mean,420729,-0.4,0.6,66,rightmove_hpi,2026-08-09
+2025-08-01,East Midlands,avg_asking_price,mean,291440,-0.3,1.1,69,rightmove_hpi,2026-08-09

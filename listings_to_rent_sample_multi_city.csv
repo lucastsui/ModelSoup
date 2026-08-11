@@ -1,0 +1,101 @@
+listing_id,channel,area,address,property_type,bedrooms,bathrooms,rent_pcm_gbp,rent_pw_gbp,flags,listed_date,agent,source,collected_as_of
+174650714,rent,London,Harrington Road London SW7,flat,2,,10833,2500,,2026-04-19,,rightmove_listing_card,2026-08-09
+91813980,rent,London,"Edge Street, London, W8",terraced,5,,47667,11000,,,,rightmove_listing_card,2026-08-09
+91813962,rent,London,"Forest Road, London, E17",flat,1,,7583,1750,,,,rightmove_listing_card,2026-08-09
+91813878,rent,London,"Hermon Hill,E18",flat,1,,5850,1350,,,,rightmove_listing_card,2026-08-09
+91813869,rent,London,"Sutton Road, Muswell Hill",flat,2,,5256,1213,,,,rightmove_listing_card,2026-08-09
+91813899,rent,London,"GFF 34 Beauval Road, London",flat,2,,7800,1800,,,,rightmove_listing_card,2026-08-09
+91813800,rent,London,"Osborne Mews,",flat,1,,5633,1300,,,,rightmove_listing_card,2026-08-09
+91813794,rent,London,"Alexandra Road, London, W4",flat,2,,9750,2250,,,,rightmove_listing_card,2026-08-09
+91550166,rent,London,"St. James Road, Sutton, SM1",semi-detached,4,,15167,3500,,,,rightmove_listing_card,2026-08-09
+91153560,rent,London,"Oxford Road North, London, W4",flat,2,,10617,2450,,,,rightmove_listing_card,2026-08-09
+91592493,rent,Manchester,"Talbot Road, 101 Talbot Road, M16",apartment,1,,5438,1255,,2026-08-03,,rightmove_listing_card,2026-08-09
+91813914,rent,Manchester,"1 Rochdale Road, Manchester, M4",apartment,1,,6985,1612,,,,rightmove_listing_card,2026-08-09
+91813911,rent,Manchester,"1 Rochdale Road, Manchester, M4",apartment,1,,6985,1612,,,,rightmove_listing_card,2026-08-09
+91813908,rent,Manchester,"1 Rochdale Road, Manchester, M4",apartment,1,,7202,1662,,,,rightmove_listing_card,2026-08-09
+88591986,rent,Manchester,"Great Ancoats St, Manchester, M4",flat,2,,7583,1750,,,,rightmove_listing_card,2026-08-09
+91009419,rent,Manchester,"Great Ancoats Street, Manchester, Greater Manchester, M4",flat,1,,5612,1295,,,,rightmove_listing_card,2026-08-09
+91813560,rent,Manchester,"Bellam Court, Manchester, M27",flat,2,,4333,1000,,,,rightmove_listing_card,2026-08-09
+91813260,rent,Manchester,"Wilfred St, Manchester, M40",detached,3,,5850,1350,,,,rightmove_listing_card,2026-08-09
+91812513,rent,Manchester,"The Residences, West Tower, Deansgate Square, M15",apartment,2,,9967,2300,,,,rightmove_listing_card,2026-08-09
+91812495,rent,Manchester,"Angel Gardens, M4",flat,1,,6288,1451,,,,rightmove_listing_card,2026-08-09
+91799211,rent,Birmingham,"Livery Street, Birmingham, B3",apartment,2,,8125,1875,,,,rightmove_listing_card,2026-08-09
+22771557,rent,Birmingham,"Nigel Court, Montague Road, Edgbaston, Birmingham",apartment,1,,3423,790,,,,rightmove_listing_card,2026-08-09
+87272645,rent,Birmingham,"Wharf Road, Birmingham, B30",apartment,2,,3857,890,,,,rightmove_listing_card,2026-08-09
+20194932,rent,Birmingham,"Bentham Court, Birmingham",apartment,1,,3185,735,,,,rightmove_listing_card,2026-08-09
+91129914,rent,Birmingham,"Comet Works, Princip Street, Birmingham",apartment,3,,7583,1750,,,,rightmove_listing_card,2026-08-09
+89402577,rent,Birmingham,"Mason Way, Park Central, Birmingham City Centre",apartment,2,,4658,1075,,,,rightmove_listing_card,2026-08-09
+88634838,rent,Birmingham,"The Forge, Bradford Street, Digbeth, Birmingham City Centre",apartment,1,,3878,895,,,,rightmove_listing_card,2026-08-09
+91813131,rent,Birmingham,"Quinton Road, Harborne, Birmingham",terraced,3,,5633,1300,,,,rightmove_listing_card,2026-08-09
+91813134,rent,Birmingham,"York Road, Edgbaston, Birmingham",flat,1,,3683,850,,,,rightmove_listing_card,2026-08-09
+91812903,rent,Birmingham,"Bournville Lane, Stirchley, B30 2LP",flat,1,,3445,795,,,,rightmove_listing_card,2026-08-09
+91679463,rent,Leeds,"Charlotte Fox Lane, Leeds, West Yorkshire, LS15",semi-detached,3,,7345,1695,,2026-08-05,,rightmove_listing_card,2026-08-09
+91813959,rent,Leeds,"Thorner Lane, Scarcroft, LS14",flat,2,,4117,950,,,,rightmove_listing_card,2026-08-09
+91813872,rent,Leeds,"23 Swallow Drive, Leeds",semi-detached,2,,5417,1250,,,,rightmove_listing_card,2026-08-09
+91813287,rent,Leeds,"Brownhill Avenue, Leeds, LS9",terraced,3,,5200,1200,,,,rightmove_listing_card,2026-08-09
+91813197,rent,Leeds,"Clark Road, Leeds, LS9",terraced,2,,4442,1025,,,,rightmove_listing_card,2026-08-09
+91812960,rent,Leeds,"New York Square, Quarry Hill, Leeds, West Yorkshire, LS2",apartment,2,,6608,1525,,,,rightmove_listing_card,2026-08-09
+91812963,rent,Leeds,"New York Square, Quarry Hill, Leeds, West Yorkshire, LS2",apartment,2,,7215,1665,,,,rightmove_listing_card,2026-08-09
+91812966,rent,Leeds,"New York Square, Quarry Hill, Leeds, West Yorkshire, LS2",apartment,3,,10357,2390,,,,rightmove_listing_card,2026-08-09
+91812951,rent,Leeds,"New York Square, Quarry Hill, Leeds, West Yorkshire, LS2",flat,2,,6392,1475,,,,rightmove_listing_card,2026-08-09
+91812957,rent,Leeds,"New York Square, Quarry Hill, Leeds, West Yorkshire, LS2",apartment,2,,6413,1480,,,,rightmove_listing_card,2026-08-09
+91615677,rent,Bristol,"Avon Way, Bristol, BS9",flat,3,,8233,1900,,2026-08-04,,rightmove_listing_card,2026-08-09
+91813572,rent,Bristol,"Pipe Lane, Bristol, BS1",house_share,1,,3480,803,,,,rightmove_listing_card,2026-08-09
+91813311,rent,Bristol,"Lombard Street, Bristol, BS3",flat,1,,6738,1555,,,,rightmove_listing_card,2026-08-09
+91811895,rent,Bristol,"Halstock Avenue, Bristol, BS16",flat,1,,4767,1100,,,,rightmove_listing_card,2026-08-09
+91243671,rent,Bristol,"Hollywood Road, Bristol, BS4",semi-detached,4,,9967,2300,,,,rightmove_listing_card,2026-08-09
+91198014,rent,Bristol,"Hotwell Road, Bristol, BS8",flat,2,,5850,1350,,,,rightmove_listing_card,2026-08-09
+91807710,rent,Bristol,"Westacre Close, Bristol, BS10 7DQ",flat,3,,6283,1450,,,,rightmove_listing_card,2026-08-09
+91807698,rent,Bristol,"Clover Ground, Bristol, BS9",end_of_terrace,3,,7800,1800,,,,rightmove_listing_card,2026-08-09
+91807071,rent,Bristol,BRISTOL | STUDENT | SEPTEMBER | BS2,studio,,,7492,1729,,,,rightmove_listing_card,2026-08-09
+91807074,rent,Bristol,BRISTOL | STUDENT | SEPTEMBER,studio,,,7510,1733,,,,rightmove_listing_card,2026-08-09
+88949286,rent,Edinburgh,"Inglis Green Rigg, Edinburgh, EH14",flat,2,,5633,1300,,2026-08-07,,rightmove_listing_card,2026-08-09
+91813428,rent,Edinburgh,"Dockside, Edinburgh, EH6",apartment,1,,6608,1525,,,,rightmove_listing_card,2026-08-09
+91813425,rent,Edinburgh,"Ocean Drive, Edinburgh, EH6",apartment,,,6717,1550,,,,rightmove_listing_card,2026-08-09
+91813419,rent,Edinburgh,"Dockside, Edinburgh, EH6",apartment,1,,7345,1695,,,,rightmove_listing_card,2026-08-09
+91813413,rent,Edinburgh,"Dockside, Edinburgh, EH6",apartment,2,,8233,1900,,,,rightmove_listing_card,2026-08-09
+91813404,rent,Edinburgh,"Dockside, Edinburgh, EH6",apartment,2,,8970,2070,,,,rightmove_listing_card,2026-08-09
+91813401,rent,Edinburgh,"Dockside, Edinburgh, EH6",apartment,2,,8970,2070,,,,rightmove_listing_card,2026-08-09
+91813398,rent,Edinburgh,"Dockside, Edinburgh, EH6",apartment,3,,9533,2200,,,,rightmove_listing_card,2026-08-09
+91813395,rent,Edinburgh,"Dockside, Edinburgh, EH6",apartment,3,,10812,2495,,,,rightmove_listing_card,2026-08-09
+91813158,rent,Edinburgh,"East London Street, Edinburgh, EH7",flat,4,,17333,4000,,,,rightmove_listing_card,2026-08-09
+91671909,rent,Liverpool,"The Lexington, 3b William Jessop Way Liverpool L3",apartment,1,,6348,1465,,2026-08-05,,rightmove_listing_card,2026-08-09
+91813266,rent,Liverpool,"Exchange Street East, Liverpool, L2",flat,2,,6478,1495,,,,rightmove_listing_card,2026-08-09
+91808685,rent,Liverpool,"Apartment , Henry Street, Liverpool",parking,,,542,125,,,,rightmove_listing_card,2026-08-09
+91808277,rent,Liverpool,"Ellerman Road, Liverpool, L3",flat,2,,4290,990,,,,rightmove_listing_card,2026-08-09
+91807722,rent,Liverpool,"West Tower, Brook Street L3",apartment,2,,6500,1500,,,,rightmove_listing_card,2026-08-09
+91458714,rent,Liverpool,Brainerd Street. Liverpool. L13 7EH,house,4,,5417,1250,,,,rightmove_listing_card,2026-08-09
+91634697,rent,Liverpool,"County Road, Liverpool, L4",flat,1,,3033,700,,,,rightmove_listing_card,2026-08-09
+91804905,rent,Liverpool,LIVERPOOL | STUDENT | SEPTEMBER,studio,,,3757,867,,,,rightmove_listing_card,2026-08-09
+91805028,rent,Liverpool,STUDENT ONLY | 51/44 WEEKS | LIVERPOOL | L3,studio,,,3887,897,,,,rightmove_listing_card,2026-08-09
+91804869,rent,Liverpool,STUDENT ONLY | 51/44 WEEKS | LIVERPOOL | L3,studio,,,3735,862,,,,rightmove_listing_card,2026-08-09
+91766598,rent,Glasgow,"Solasta Riverside, Clyde Place, Glasgow, G5",flat,3,,10075,2325,,2026-08-07,,rightmove_listing_card,2026-08-09
+91813929,rent,Glasgow,"Anderston Quay, Glasgow, G3",apartment,2,,9611,2218,,,,rightmove_listing_card,2026-08-09
+91813923,rent,Glasgow,"30 Anderston Quay, Glasgow, G3",apartment,1,,6322,1459,,,,rightmove_listing_card,2026-08-09
+91813920,rent,Glasgow,"30 Anderston Quay, Glasgow, G3",apartment,2,,6613,1526,,,,rightmove_listing_card,2026-08-09
+91813323,rent,Glasgow,"Craigton Road, Milngavie, Glasgow, G62",terraced,3,,5633,1300,,,,rightmove_listing_card,2026-08-09
+91813320,rent,Glasgow,"Hyndland Road, Glasgow, G12",flat,1,,5958,1375,,,,rightmove_listing_card,2026-08-09
+91812777,rent,Glasgow,"Panmure Gate, Glasgow",flat,2,,5200,1200,,,,rightmove_listing_card,2026-08-09
+91811865,rent,Glasgow,"Bothwell Street, Glasgow",flat,2,,6478,1495,,,,rightmove_listing_card,2026-08-09
+91808028,rent,Glasgow,"Auchentoshan Terrace, Glasgow, G21",flat_share,1,,3246,749,,,,rightmove_listing_card,2026-08-09
+91807704,rent,Glasgow,"Stonelaw Road, Rutherglen, G73",apartment,1,,2817,650,,,,rightmove_listing_card,2026-08-09
+91682178,rent,Cardiff,"L524, Anchor Works, Dumballs Road, Cardiff(City), CF10",flat,2,,6301,1454,,2026-08-05,,rightmove_listing_card,2026-08-09
+91813629,rent,Cardiff,"Tai Afon Y Rhodfa Ganolog, Cardiff(City), CF10",apartment,,,5395,1245,,,,rightmove_listing_card,2026-08-09
+91813608,rent,Cardiff,"Tai Afon Y Rhodfa Ganolog, Cardiff(City), CF10",studio,,,5547,1280,,,,rightmove_listing_card,2026-08-09
+91813602,rent,Cardiff,"Tai Afon Y Rhodfa Ganolog, Cardiff(City), CF10",apartment,1,,6218,1435,,,,rightmove_listing_card,2026-08-09
+91813518,rent,Cardiff,"Tai Afon Y Rhodfa Ganolog, Cardiff(City), CF10",apartment,2,,7150,1650,,,,rightmove_listing_card,2026-08-09
+91813476,rent,Cardiff,"Tai Afon Y Rhodfa Ganolog, Cardiff(City), CF10",apartment,2,,7865,1815,,,,rightmove_listing_card,2026-08-09
+91813446,rent,Cardiff,"Tai Afon Y Rhodfa Ganolog, Cardiff(City), CF10",apartment,2,,7822,1805,,,,rightmove_listing_card,2026-08-09
+91808577,rent,Cardiff,"Beda Road, Cardiff",flat,2,,5200,1200,,,,rightmove_listing_card,2026-08-09
+91807998,rent,Cardiff,"Adventurers Quay, Cardiff Bay, CF10",apartment,1,,4225,975,,,,rightmove_listing_card,2026-08-09
+91807713,rent,Cardiff,"Ffordd James McGhan, Cardiff Bay",apartment,2,,4767,1100,,,,rightmove_listing_card,2026-08-09
+91728474,rent,Cambridge,"4 Station Square, Cambridge, CB1",apartment,2,,12133,2800,,2026-08-06,,rightmove_listing_card,2026-08-09
+91813854,rent,Cambridge,"East Road, Cambridge",apartment,1,,4983,1150,,,,rightmove_listing_card,2026-08-09
+91808274,rent,Cambridge,"Hobbs House, Cambridge, CB2",penthouse,2,,10812,2495,,,,rightmove_listing_card,2026-08-09
+91811874,rent,Cambridge,"Regatta Court, Cambridge, CB5",flat,2,,6457,1490,,,,rightmove_listing_card,2026-08-09
+91693011,rent,Cambridge,"Green End Road, Cambridge, CB4",flat,1,,5612,1295,,,,rightmove_listing_card,2026-08-09
+88273998,rent,Cambridge,"Ross Street, Cambridge, CB1",terraced,3,,8667,2000,,,,rightmove_listing_card,2026-08-09
+91810374,rent,Cambridge,"Victoria Street, Cambridge",town_house,3,,11483,2650,,,,rightmove_listing_card,2026-08-09
+91810368,rent,Cambridge,"Gilmerton Court, Trumpington, Cambridge",flat,2,,6392,1475,,,,rightmove_listing_card,2026-08-09
+91806693,rent,Cambridge,CAMBRIDGE | STUDENT | SEPTEMBER,studio,,,6084,1404,,,,rightmove_listing_card,2026-08-09
+91806480,rent,Cambridge,CAMBRIDGE | STUDENT | SEPTEMBER,studio,,,5616,1296,,,,rightmove_listing_card,2026-08-09

@@ -1,0 +1,23 @@
+as_of_date,metric,ltv,value_pct,weekly_change_pp,yearly_change_pp,source,note
+2026-08-08,avg_2y_fixed,all,5.09,-0.01,0.59,rightmove_mortgage_tracker_podium,avg across market ~£999 fee products
+2026-08-08,avg_5y_fixed,all,5.12,-0.01,0.62,rightmove_mortgage_tracker_podium,
+2026-08-08,lowest_2y_fixed,all,4.46,0.04,0.77,rightmove_mortgage_tracker_podium,
+2026-08-08,lowest_5y_fixed,all,4.48,-0.09,0.64,rightmove_mortgage_tracker_podium,
+2026-08-08,avg_2y_fixed,95,5.68,0.0,0.49,rightmove_mortgage_tracker_podium,
+2026-08-08,avg_5y_fixed,95,5.69,0.0,0.57,rightmove_mortgage_tracker_podium,
+2026-08-08,avg_2y_fixed,90,5.24,-0.01,0.52,rightmove_mortgage_tracker_podium,
+2026-08-08,avg_5y_fixed,90,5.22,-0.01,0.56,rightmove_mortgage_tracker_podium,
+2026-08-08,avg_2y_fixed,85,5.02,-0.02,0.62,rightmove_mortgage_tracker_podium,
+2026-08-08,avg_5y_fixed,85,5.07,-0.01,0.68,rightmove_mortgage_tracker_podium,
+2026-08-08,avg_2y_fixed,75,4.96,-0.02,0.64,rightmove_mortgage_tracker_podium,
+2026-08-08,avg_5y_fixed,75,4.98,0.0,0.61,rightmove_mortgage_tracker_podium,
+2026-08-08,avg_2y_fixed,60,4.67,-0.01,0.78,rightmove_mortgage_tracker_podium,
+2026-08-08,avg_5y_fixed,60,4.7,-0.02,0.68,rightmove_mortgage_tracker_podium,
+2026-08-08,lowest_2y_fixed_ftb,95,4.97,0.0,0.3,rightmove_mortgage_tracker_podium,lowest advertised FTB-style
+2026-08-08,lowest_5y_fixed_ftb,95,4.98,0.0,0.32,rightmove_mortgage_tracker_podium,
+2026-08-08,lowest_2y_fixed_ftb,90,4.86,0.02,0.6,rightmove_mortgage_tracker_podium,
+2026-08-08,lowest_5y_fixed_ftb,90,4.75,-0.1,0.48,rightmove_mortgage_tracker_podium,
+2026-08-08,lowest_2y_fixed_ftb,85,4.73,-0.01,0.82,rightmove_mortgage_tracker_podium,
+2026-08-08,lowest_5y_fixed_ftb,85,4.73,-0.06,0.7,rightmove_mortgage_tracker_podium,
+2026-08-08,boe_base_rate,,3.75,,,rightmove_article_via_boe,held since December per Rightmove article
+2026-07-20,avg_2y_fixed,all,4.92,,,rightmove_hpi_via_podium,as published in July 2026 HPI
