@@ -12,6 +12,11 @@ Automating hypothesis generation and verification can accelerate knowledge disco
 A time consuming problem that researchers face daily is to come up with the correct theory that can explain past data and correctly predict the future. We solve this problem by using LLMs to propose vast amounts of theories using any source data and theory that they see fit. They can even propose a blackbox model if they think that is the right approach. We evaluate these theories and select the ones that are reasonable good and have them mixed and matched in a metaphorically reproductive way to spawn new hypotheses to be tested again. We use the prediction of housing price in London as the task of this experiment. We find that the winner hypothesis is not some sophisticated theory but a simple prediction that "the housing price of London rises by 58.1% every 10 years." We could expand this idea to other research as long as the data we have are relevant to the problem and success and be measured.
 
 # Architecture
+
+![Model Soup architecture](docs/architecture.jpg)
+
+Interactive diagram: [docs/architecture.html](docs/architecture.html)
+
 The Model Soup consists of these components:
 - The data collector independently collects data from the Internet.
 - The Scorer runs the hypotheses, cross validates and scores them.
