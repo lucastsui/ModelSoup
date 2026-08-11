@@ -13,9 +13,7 @@ A time consuming problem that researchers face daily is to come up with the corr
 
 # Architecture
 
-![Model Soup architecture](docs/architecture.jpg)
-
-Interactive diagram: [docs/architecture.html](docs/architecture.html)
+![Model Soup Architecture](docs/architecture.jpg)
 
 The Model Soup consists of these components:
 - The data collector independently collects data from the Internet.
