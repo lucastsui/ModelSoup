@@ -2,6 +2,8 @@
 
 **GitHub:** https://github.com/lucastsui/ModelSoup
 
+![Model Soup evolution demo](docs/model_soup_demo.gif)
+
 # One-Line Summary
 In one line: we created a framework to automate hypothesis generation, improvement, and verification.
 
