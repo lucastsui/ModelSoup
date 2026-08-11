@@ -1,7 +1,5 @@
 # Model Soup
 
-**GitHub:** https://github.com/lucastsui/ModelSoup
-
 ![Model Soup evolution demo](docs/model_soup_demo.gif)
 
 # One-Line Summary
