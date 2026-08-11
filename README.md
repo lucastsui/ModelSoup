@@ -1,3 +1,7 @@
+# Model Soup
+
+**GitHub:** https://github.com/lucastsui/ModelSoup
+
 # One-Line Summary
 In one line: we created a framework to automate hypothesis generation, improvement, and verification.
 
