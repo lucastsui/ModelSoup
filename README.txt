@@ -83,7 +83,7 @@ Repeatable collection (research loop)
 -------------------------------------
 Method record:  docs/COLLECTION_METHOD.md
 Runner script:  python3 scripts/collect_full_research_data.py
-Full pack out:  research_data/  (prices, rates, news, panels, snapshots)
+Full pack out:  source_data/research_data/  (prices, rates, news, panels, snapshots)
   - panels/panel_sold_ukhpi_features.csv   long sold HPI + lags + forward returns
   - panels/backtest_label_ledger.csv       actual change% labels for scorer
   - news/political_news_items.csv          BBC/Guardian politics + BoE rate events

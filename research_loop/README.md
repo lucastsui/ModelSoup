@@ -66,4 +66,4 @@ Config overrides: `deepseek_ssh_host`, `deepseek_model`, `prefer_llms` in `confi
 
 ## Data
 
-Uses `../research_data` panels + backtest labels from the collector.
+Uses `../source_data/research_data` panels + backtest labels from the collector.

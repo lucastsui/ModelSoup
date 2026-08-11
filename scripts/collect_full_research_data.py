@@ -26,7 +26,7 @@ from html import unescape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "research_data"
+OUT = ROOT / "source_data" / "research_data"
 RAW = OUT / "raw"
 PRICES = OUT / "prices"
 RATES = OUT / "rates"

@@ -117,7 +117,7 @@ raw_data = {
 
 ### Output layout (this project)
 ```
-research_data/
+source_data/research_data/
   COLLECTION_METHOD.md          # symlink or copy of this doc
   DATA_SOURCE_REPORT.csv
   COLLECTION_META.json

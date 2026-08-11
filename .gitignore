@@ -11,3 +11,12 @@ research_loop/runs/
 research_loop/viz/lineage_graph.json
 research_loop/viz/live_events.json
 *.mov
+source_data/agent_runs/
+source_data/agent_runs_equal/
+source_data/agent_runs_rightmove/
+source_data/london_verified/
+source_data/research_data/raw/
+source_data/research_data/prices/
+source_data/research_data/snapshots/
+research_loop/archive/
+research_loop/LATEST_RUN.txt

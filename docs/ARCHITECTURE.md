@@ -20,7 +20,7 @@ flowchart TB
 
   subgraph Collect["Data collector"]
     COL["scripts/collect_full_research_data.py"]
-    RD["research_data/\npanels · labels · rates · news"]
+    RD["source_data/research_data/\npanels · labels · rates · news"]
   end
 
   subgraph Loop["Research loop  research_loop/"]
@@ -81,7 +81,7 @@ flowchart TB
 
 ```mermaid
 sequenceDiagram
-  participant D as research_data
+  participant D as source_data
   participant S as Scorer
   participant E as Evolver
   participant L as LLM models
@@ -146,7 +146,7 @@ Falsifiable prediction: 9-tuple (target, aggregation, area, as-of, start, end, c
 | Piece | Path |
 |-------|------|
 | Collector | `scripts/collect_full_research_data.py` |
-| Data | `research_data/` |
+| Data | `source_data/` (incl. `research_data/`) |
 | Loop | `research_loop/` |
 | Full run (hybrid) | `research_loop/run_full_evolution.py` |
 | Viz | `research_loop/viz/` → http://127.0.0.1:8765/ |

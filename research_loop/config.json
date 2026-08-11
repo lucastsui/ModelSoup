@@ -1,5 +1,5 @@
 {
-  "data_root": "../research_data",
+  "data_root": "../source_data/research_data",
   "panel_path": "panels/panel_sold_ukhpi_features.csv",
   "label_path": "panels/backtest_label_ledger.csv",
   "split_path": "panels/backtest_split_assignments.csv",
