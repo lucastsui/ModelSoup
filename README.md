@@ -3,7 +3,7 @@
 ![Model Soup evolution demo](docs/model_soup_demo.gif)
 
 # One-Line Summary
-In one line: we created a framework to automate hypothesis generation, improvement, and verification.
+We created a framework to automate hypothesis generation, improvement, and verification.
 
 # Abstract
 Automating hypothesis generation and verification can accelerate knowledge discovery. A bottleneck in research workflow is to generate the correct hypothesis efficiently given the vast search space of possible hypotheses. We propose Model Soup, a method to overcome this bottleneck by using evolutionary method to select the whole research workflow, from selecting source data, the LLM model, whether the hypothesis is parameter based or neural network based, to mutating and breeding new hypothesis. We use a score that rewards cross-validated hit rate while penalizing coincidental hits in selecting offsprings. We test this method using a mix of historical housing price data from 1968 and political-economical unstructured news to predict the housing price of London. We find that the winning model is a neural network based model that predicts a 57% rise of property price every 10 years. The significance of this method lies in the fact that it can be expanded to other hypothesis searching problem where relevant source data is readily available and a measurable score can be defined.
